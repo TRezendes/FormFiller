@@ -106,12 +106,14 @@ for record in mock_data:
 
 browser = webdriver.Firefox()
 
-# Uncomment the next three lines to run headless
+# # Uncomment the next three lines to run headless
 # options = webdriver.FirefoxOptions()
 # options.add_argument("-headless")
 # driver = webdriver.Firefox(options=options)
-# Uncomment the next line if you want a good view of the form doing its thing
+
+# # Uncomment the next line if you want a good view of the form doing its thing
 browser.maximize_window()
+
 browser.get(form_url)
 time.sleep(5)
 
