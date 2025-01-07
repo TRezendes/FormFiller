@@ -1,0 +1,120 @@
+- Student Name
+  - First Name
+    - (By.XPATH, '/fieldset[@id="name-ee367545-38c6-4d3f-adef-27b3a5222961"]/div/label/input[@name="fname"]')
+    - max: 30
+  - Last Name
+    - (By.XPATH, '/fieldset[@id="name-ee367545-38c6-4d3f-adef-27b3a5222961"]/div/label/input[@name="lname"]')
+    - max: 30
+- Student Birthdate
+  - Month
+    - (By.CSS_SELECTOR('input[data-title="Month"]'))
+    - max: 2
+  - Day
+    - (By.CSS_SELECTOR('input[data-title="Day"]'))
+    - max: 2
+  - Year
+    - (By.CSS_SELECTOR('input[data-title="Year"]'))
+    - max: 4
+- Grade Level (\<select\>)
+  - (By.ID, 'select-d028169d-5994-4f8f-a99b-a4136bbf5b99-field')
+  - Kindergarten
+  - 1st
+  - 2nd
+  - 3rd
+  - 4th
+  - 5th
+  - 6th
+  - 7th
+  - 8th
+  - 9th
+  - 10th
+  - 11th
+  - 12th
+- Student Phone Number
+  - Area Code
+    - (By.XPATH, '/fieldset[@id="phone-64f8a1c8-a0c7-42ad-a853-9d0ee175907c"]/div/label/input[@data-title="Areacode"]')
+    - max: 3
+  - Phone Local Prefix
+    - (By.XPATH, '/fieldset[@id="phone-64f8a1c8-a0c7-42ad-a853-9d0ee175907c"]/div/label/input[@data-title="Prefix"]')
+    - max: 3
+  - Phone Local Suffix
+    - (By.XPATH, '/fieldset[@id="phone-64f8a1c8-a0c7-42ad-a853-9d0ee175907c"]/div/label/input[@data-title="Line"]')
+    - max: 4
+- Student Email
+  - (By.ID, 'email-f5dd562d-fdef-40bc-970a-b7e725e331d2-field')
+- School District
+  - (By.ID, 'text-4e1582df-c6ee-484f-b95c-b1b0bbaebd9b-field')
+- Name of School
+  - (By.ID, 'text-ab1bef83-3d2c-4997-bbb5-5fad296aaccd-field')
+- Type of School (\<select\>)
+  - (By.ID, 'select-4b04c9f9-23a0-41af-8632-6bfe3805057f-field')
+  - Public
+  - Private
+  - Charter
+  - Other
+- Are you currently a student athlete at a California-based school? (\<select\>)
+  - (By.ID, 'select-54a79dfb-52de-489e-916b-fd41a26c3951-field')
+  - Yes
+  - No
+- If yes, what sport? (\<select\>)
+  - (By.ID, 'lect-5233d989-d6a9-480f-beee-51574f401f84-field')
+  - Soccer
+  - Football
+  - Baseball
+  - Softball
+  - Volleyball
+  - Swim
+  - Waterpolo
+  - Track and Field
+  - Cross Country
+  - Basketball
+  - Cheer
+  - Gymnastics
+  - Boxing
+  - Hockey
+  - Other
+- Is there currently a transgender student on your team? (\<select\>)
+  - (By.ID, 'select-bcd3d894-968d-479a-a9b2-6ddf7a76190c-field')
+  - Yes
+  - No
+- Have you or your team competed against a transgender student while a part of your school athletic team? (\<select\>)
+  - (By.ID, 'select-7aa80927-b034-4fa8-bb62-23d23bc85bf4-field')
+  - Yes
+  - No
+- If yes, have you or your team lost a medal, podium position, or other sports recognition as a result of competing against a transgender student? (\<select\>)
+  - (By.ID, 'select-d0916576-8c5a-45fb-8bd8-3516463fc4fb-field')
+  - Yes
+  - No
+- Please explain:
+  - (By.ID, 'textarea-61bfe773-3ba8-4016-a165-4be0d876c57f-field')
+- Parent Relation (\<select\>)
+  - (By.ID, 'select-2e6db164-bb16-459b-9d8c-5f887bd82c61-field')
+  - Mother
+  - Father
+  - Guardian
+  - Other
+- Parent's Name
+  - First Name
+    - (By.XPATH, '/fieldset[@id="name-yui_3_17_2_1_1693613454290_9239"]/div/label/input[@name="fname"]')
+    - max: 30
+  - Last Name
+    - (By.XPATH, '/fieldset[@id="name-yui_3_17_2_1_1693613454290_9239"]/div/label/input[@name="lname"]')
+    - max: 30
+- Parent's Email
+  - (By.ID, 'email-dd630fb5-766f-4b7e-968c-644cb378a927-field')
+- Parent's Phone
+  - Area Code
+    - (By.XPATH, '/fieldset[@id="phone-b7c1fc30-9c7e-475f-bb65-9badd1ffc72a"]/div/label/input[@data-title="Areacode"]')
+    - max: 3
+  - Phone Local Prefix
+    - (By.XPATH, '/fieldset[@id="phone-b7c1fc30-9c7e-475f-bb65-9badd1ffc72a"]/div/label/input[@data-title="Prefix"]')
+    - max: 3
+  - Phone Local Suffix
+    - (By.XPATH, '/fieldset[@id="phone-b7c1fc30-9c7e-475f-bb65-9badd1ffc72a"]/div/label/input[@data-title="Line"]')
+    - max: 4
+- Student Acknowledgement
+  - (By.ID, 'ee937708-36a0-4d26-b894-326710667749-field')
+- Parent Acknowledgement
+  - (By.ID, 'text-726b8518-a80e-4dbc-b0c6-8f3ae030179c-field')
+- Submit
+  - (By.CSS_SELECTOR('input[value="Submit"]'))

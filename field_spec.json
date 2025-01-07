@@ -1,0 +1,125 @@
+[
+  {
+    "name": "student_first_name",
+    "percent_blank": 0,
+    "type": "First Name"
+  },
+  {
+    "name": "student_last_name",
+    "percent_blank": 0,
+    "type": "Last Name"
+  },
+  {
+    "name": "birth_date",
+    "percent_blank": 0,
+    "type": "Datetime",
+    "format": "%Y-%m-%d",
+    "max": "01/01/2019",
+    "min": "01/01/2007"
+
+  },
+  {
+    "name": "student_phone_number",
+    "percent_blank": 0,
+    "type": "Phone",
+    "format": "###-###-####"
+  },
+  {
+    "name": "student_email",
+    "percent_blank": 0,
+    "type": "Email Address"
+  },
+  {
+    "name": "what_sport",
+    "percent_blank": 0,
+    "type": "Custom List",
+    "values": [
+      "Soccer",
+      "Football",
+      "Baseball",
+      "Softball",
+      "Volleyball",
+      "Swim",
+      "Waterpolo",
+      "Track and Field",
+      "Cross Country",
+      "Basketball",
+      "Cheer",
+      "Gymnastics",
+      "Boxing",
+      "Hockey",
+      "Other"
+    ]
+  },
+  {
+    "name": "are_you_outing_a_teammate",
+    "percent_blank": 0,
+    "type": "Custom List",
+    "values": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "name": "or_are_you_outing_an_opponent",
+    "percent_blank": 0,
+    "type": "Custom List",
+    "values": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "name": "are_you_a_sore_loser",
+    "percent_blank": 0,
+    "type": "Custom List",
+    "values": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "name": "parent_relation",
+    "percent_blank": 0,
+    "type": "Custom List",
+    "values": [
+      "Mother",
+      "Father",
+      "Guardian",
+      "Other"
+    ]
+  },
+  {
+    "name": "parent_first_name",
+    "percent_blank": 0,
+    "type": "First Name"
+  },
+  {
+    "name": "parent_last_name",
+    "percent_blank": 0,
+    "type": "Last Name"
+  },
+  {
+    "name": "parent_email",
+    "percent_blank": 0,
+    "type": "Email Address"
+  },
+  {
+    "name": "parent_phone_number",
+    "percent_blank": 0,
+    "type": "Phone",
+    "format": "###-###-####"
+  },
+  {
+    "name": "student_acknowledgement",
+    "percent_blank": 0,
+    "type": "Formula",
+    "value": "student_first_name + ' ' + student_last_name"
+  },
+  {
+    "name": "parent_acknowledgement",
+    "percent_blank": 0,
+    "type": "Formula",
+    "value": "parent_first_name + ' ' + parent_last_name"
+  }
+]
