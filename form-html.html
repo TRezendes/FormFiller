@@ -1,468 +1,1980 @@
-
-    <fieldset id="name-ee367545-38c6-4d3f-adef-27b3a5222961" class="form-item fields name required">
-
-        <legend class="title">
-
-                          Student Name
-
-
-            <span class="required" aria-hidden="true">*</span>
-
-        </legend>
-
-        <div class="field first-name">
-            <label class="caption">
-                <input class="field-element field-control" name="fname" x-autocompletetype="given-name" type="text" spellcheck="false" maxlength="30" data-title="First" aria-required="true"/>
-                <span class="caption-text">First Name</span>
-            </label>
-        </div>
-        <div class="field last-name">
-            <label class="caption">
-                <input class="field-element field-control" name="lname" x-autocompletetype="surname" type="text" spellcheck="false" maxlength="30" data-title="Last" aria-required="true"/>
-                <span class="caption-text">Last Name</span>
-            </label>
-        </div>
-    </fieldset>
-
-    <fieldset id="date-6704a7a7-1f0c-4dff-9d3e-722fa5ab4033" class="form-item fields date">
-
-        <legend class="title">
-                      Student Birthdate
-
-                    </legend>
-
-        <div class="field month two-digits">
-            <label class="caption">
-                <input class="field-element" type="text" maxlength="2" data-title="Month"/>
-                <span class="caption-text">MM</span>
-            </label>
-        </div>
-        <div class="field day two-digits">
-            <label class="caption">
-                <input class="field-element" type="text" maxlength="2" data-title="Day"/>
-                <span class="caption-text">DD</span>
-            </label>
-        </div>
-        <div class="field year four-digits">
-            <label class="caption">
-                <input class="field-element" type="text" maxlength="4" data-title="Year"/>
-                <span class="caption-text">YYYY</span>
-            </label>
-        </div>
-    </fieldset>
-
-    <div id="select-d028169d-5994-4f8f-a99b-a4136bbf5b99" class="form-item field select">
-
-        <label class="title" for="select-d028169d-5994-4f8f-a99b-a4136bbf5b99-field">
-                      Grade Level
-
-                    </label>
-
-        <select id="select-d028169d-5994-4f8f-a99b-a4136bbf5b99-field" name="select-d028169d-5994-4f8f-a99b-a4136bbf5b99-field">
-
-            <option value="Kindergarten">Kindergarten</option>
-
-            <option value="1st">1st</option>
-
-            <option value="2nd">2nd</option>
-
-            <option value="3rd">3rd</option>
-
-            <option value="4th">4th</option>
-
-            <option value="5th">5th</option>
-
-            <option value="6th">6th</option>
-
-            <option value="7th">7th</option>
-
-            <option value="8th">8th</option>
-
-            <option value="9th">9th</option>
-
-            <option value="10th">10th</option>
-
-            <option value="11th">11th</option>
-
-            <option value="12th">12th</option>
-
-            <optgroup label=""></optgroup>
-        </select>
-    </div>
-
-    <fieldset id="phone-64f8a1c8-a0c7-42ad-a853-9d0ee175907c" class="form-item fields phone required">
-
-        <legend class="title">
-
-                          Student Phone Number
-
-
-            <span class="required" aria-hidden="true">*</span>
-
-        </legend>
-
-        <div class="field text three-digits">
-            <label class="caption">
-                <input class="field-element" x-autocompletetype="phone-area-code" type="text" maxlength="3" data-title="Areacode" aria-required="true"/>
-                <span class="caption-text">(###)</span>
-            </label>
-        </div>
-        <div class="field text three-digits">
-            <label class="caption">
-                <input class="field-element" x-autocompletetype="phone-local-prefix" type="text" maxlength="3" data-title="Prefix" aria-required="true"/>
-                <span class="caption-text">###</span>
-            </label>
-        </div>
-        <div class="field text four-digits">
-            <label class="caption">
-                <input class="field-element" x-autocompletetype="phone-local-suffix" type="text" maxlength="4" data-title="Line" aria-required="true"/>
-                <span class="caption-text">####</span>
-            </label>
-        </div>
-    </fieldset>
-
-    <div id="email-f5dd562d-fdef-40bc-970a-b7e725e331d2" class="form-item field email required">
-
-        <label class="title" for="email-f5dd562d-fdef-40bc-970a-b7e725e331d2-field">
-
-                          Student Email
-
-
-            <span class="required" aria-hidden="true">*</span>
-
-        </label>
-
-        <input class="field-element" id="email-f5dd562d-fdef-40bc-970a-b7e725e331d2-field" name="email" type="email" autocomplete="email" spellcheck="false" aria-required="true"/>
-    </div>
-
-    <div id="text-4e1582df-c6ee-484f-b95c-b1b0bbaebd9b" class="form-item field text required">
-
-        <label class="title" for="text-4e1582df-c6ee-484f-b95c-b1b0bbaebd9b-field">
-
-                          School District
-
-
-            <span class="required" aria-hidden="true">*</span>
-
-        </label>
-
-        <input class="field-element text" type="text" id="text-4e1582df-c6ee-484f-b95c-b1b0bbaebd9b-field" aria-required="true"/>
-    </div>
-
-    <div id="text-ab1bef83-3d2c-4997-bbb5-5fad296aaccd" class="form-item field text required">
-
-        <label class="title" for="text-ab1bef83-3d2c-4997-bbb5-5fad296aaccd-field">
-
-                          Name of School
-
-
-            <span class="required" aria-hidden="true">*</span>
-
-        </label>
-
-        <input class="field-element text" type="text" id="text-ab1bef83-3d2c-4997-bbb5-5fad296aaccd-field" aria-required="true"/>
-    </div>
-
-    <div id="select-4b04c9f9-23a0-41af-8632-6bfe3805057f" class="form-item field select">
-
-        <label class="title" for="select-4b04c9f9-23a0-41af-8632-6bfe3805057f-field">
-                      Type of School
-
-                    </label>
-
-        <select id="select-4b04c9f9-23a0-41af-8632-6bfe3805057f-field" name="select-4b04c9f9-23a0-41af-8632-6bfe3805057f-field">
-
-            <option value="Public">Public</option>
-
-            <option value="Private">Private</option>
-
-            <option value="Charter">Charter</option>
-
-            <option value="Other">Other</option>
-
-            <optgroup label=""></optgroup>
-        </select>
-    </div>
-
-    <div id="select-54a79dfb-52de-489e-916b-fd41a26c3951" class="form-item field select required">
-
-        <label class="title" for="select-54a79dfb-52de-489e-916b-fd41a26c3951-field">
-
-                          Are you currently a student athlete at a California-based school?
-
-
-            <span class="required" aria-hidden="true">*</span>
-
-        </label>
-
-        <select id="select-54a79dfb-52de-489e-916b-fd41a26c3951-field" name="select-54a79dfb-52de-489e-916b-fd41a26c3951-field" aria-required="true">
-
-            <option value="Yes">Yes</option>
-
-            <option value="No">No</option>
-
-            <optgroup label=""></optgroup>
-        </select>
-    </div>
-
-    <div id="select-5233d989-d6a9-480f-beee-51574f401f84" class="form-item field select">
-
-        <label class="title" for="select-5233d989-d6a9-480f-beee-51574f401f84-field">
-                      If yes, what sport?
-
-                    </label>
-
-        <div class="description">If you play more than one sport, select your dominate sport or the sport  affected.</div>
-
-        <select id="select-5233d989-d6a9-480f-beee-51574f401f84-field" name="select-5233d989-d6a9-480f-beee-51574f401f84-field">
-
-            <option value="Soccer">Soccer</option>
-
-            <option value="Football">Football</option>
-
-            <option value="Baseball">Baseball</option>
-
-            <option value="Softball">Softball</option>
-
-            <option value="Volleyball">Volleyball</option>
-
-            <option value="Swim">Swim</option>
-
-            <option value="Waterpolo">Waterpolo</option>
-
-            <option value="Track and Field">Track and Field</option>
-
-            <option value="Cross Country">Cross Country</option>
-
-            <option value="Basketball">Basketball</option>
-
-            <option value="Cheer">Cheer</option>
-
-            <option value="Gymnastics">Gymnastics</option>
-
-            <option value="Boxing">Boxing</option>
-
-            <option value="Hockey">Hockey</option>
-
-            <option value="Other">Other</option>
-
-            <optgroup label=""></optgroup>
-        </select>
-    </div>
-
-    <div id="select-bcd3d894-968d-479a-a9b2-6ddf7a76190c" class="form-item field select">
-
-        <label class="title" for="select-bcd3d894-968d-479a-a9b2-6ddf7a76190c-field">
-                      Is there currently a transgender student on your team?
-
-                    </label>
-
-        <select id="select-bcd3d894-968d-479a-a9b2-6ddf7a76190c-field" name="select-bcd3d894-968d-479a-a9b2-6ddf7a76190c-field">
-
-            <option value="Yes">Yes</option>
-
-            <option value="No">No</option>
-
-            <optgroup label=""></optgroup>
-        </select>
-    </div>
-
-    <div id="select-7aa80927-b034-4fa8-bb62-23d23bc85bf4" class="form-item field select">
-
-        <label class="title" for="select-7aa80927-b034-4fa8-bb62-23d23bc85bf4-field">
-                      Have you or your team competed against a transgender student while a part of your school athletic team?
-
-                    </label>
-
-        <select id="select-7aa80927-b034-4fa8-bb62-23d23bc85bf4-field" name="select-7aa80927-b034-4fa8-bb62-23d23bc85bf4-field">
-
-            <option value="Yes">Yes</option>
-
-            <option value="No">No</option>
-
-            <optgroup label=""></optgroup>
-        </select>
-    </div>
-
-    <div id="select-d0916576-8c5a-45fb-8bd8-3516463fc4fb" class="form-item field select">
-
-        <label class="title" for="select-d0916576-8c5a-45fb-8bd8-3516463fc4fb-field">
-                      If yes, have you or your team lost a medal, podium position, or other sports recognition as a result of competing against a transgender student?
-
-                    </label>
-
-        <select id="select-d0916576-8c5a-45fb-8bd8-3516463fc4fb-field" name="select-d0916576-8c5a-45fb-8bd8-3516463fc4fb-field">
-
-            <option value="Yes">Yes</option>
-
-            <option value="No">No</option>
-
-            <optgroup label=""></optgroup>
-        </select>
-    </div>
-
-    <div id="textarea-61bfe773-3ba8-4016-a165-4be0d876c57f" class="form-item field textarea">
-
-        <label class="title" for="textarea-61bfe773-3ba8-4016-a165-4be0d876c57f-field">
-                      Please explain:
-
-                    </label>
-
-        <textarea class="field-element " id="textarea-61bfe773-3ba8-4016-a165-4be0d876c57f-field"></textarea>
-    </div>
-
-    <div id="section-8fc0c13d-22e7-4a4c-9718-03cc67d27c50" class="form-item section underline">
-        <div class="title">Parental Information</div>
-
-    </div>
-
-    <div id="select-2e6db164-bb16-459b-9d8c-5f887bd82c61" class="form-item field select">
-
-        <label class="title" for="select-2e6db164-bb16-459b-9d8c-5f887bd82c61-field">
-                      Parent Relation
-
-                    </label>
-
-        <select id="select-2e6db164-bb16-459b-9d8c-5f887bd82c61-field" name="select-2e6db164-bb16-459b-9d8c-5f887bd82c61-field">
-
-            <option value="Mother">Mother</option>
-
-            <option value="Father">Father</option>
-
-            <option value="Guardian">Guardian</option>
-
-            <option value="Other">Other</option>
-
-            <optgroup label=""></optgroup>
-        </select>
-    </div>
-
-    <fieldset id="name-yui_3_17_2_1_1693613454290_9239" class="form-item fields name required">
-
-        <legend class="title">
-
-                          Parent's Name
-
-
-            <span class="required" aria-hidden="true">*</span>
-
-        </legend>
-
-        <div class="field first-name">
-            <label class="caption">
-                <input class="field-element field-control" name="fname" x-autocompletetype="given-name" type="text" spellcheck="false" maxlength="30" data-title="First" aria-required="true"/>
-                <span class="caption-text">First Name</span>
-            </label>
-        </div>
-        <div class="field last-name">
-            <label class="caption">
-                <input class="field-element field-control" name="lname" x-autocompletetype="surname" type="text" spellcheck="false" maxlength="30" data-title="Last" aria-required="true"/>
-                <span class="caption-text">Last Name</span>
-            </label>
-        </div>
-    </fieldset>
-
-    <div id="email-dd630fb5-766f-4b7e-968c-644cb378a927" class="form-item field email required">
-
-        <label class="title" for="email-dd630fb5-766f-4b7e-968c-644cb378a927-field">
-
-                          Parent's Email
-
-
-            <span class="required" aria-hidden="true">*</span>
-
-        </label>
-
-        <input class="field-element" id="email-dd630fb5-766f-4b7e-968c-644cb378a927-field" name="email" type="email" autocomplete="email" spellcheck="false" aria-required="true"/>
-    </div>
-
-    <fieldset id="phone-b7c1fc30-9c7e-475f-bb65-9badd1ffc72a" class="form-item fields phone required">
-
-        <legend class="title">
-
-                          Parent's Phone
-
-
-            <span class="required" aria-hidden="true">*</span>
-
-        </legend>
-
-        <div class="field text three-digits">
-            <label class="caption">
-                <input class="field-element" x-autocompletetype="phone-area-code" type="text" maxlength="3" data-title="Areacode" aria-required="true"/>
-                <span class="caption-text">(###)</span>
-            </label>
-        </div>
-        <div class="field text three-digits">
-            <label class="caption">
-                <input class="field-element" x-autocompletetype="phone-local-prefix" type="text" maxlength="3" data-title="Prefix" aria-required="true"/>
-                <span class="caption-text">###</span>
-            </label>
-        </div>
-        <div class="field text four-digits">
-            <label class="caption">
-                <input class="field-element" x-autocompletetype="phone-local-suffix" type="text" maxlength="4" data-title="Line" aria-required="true"/>
-                <span class="caption-text">####</span>
-            </label>
-        </div>
-    </fieldset>
-
-    <div id="ee937708-36a0-4d26-b894-326710667749" class="form-item field text required">
-
-        <label class="title" for="ee937708-36a0-4d26-b894-326710667749-field">
-
-                          Student Acknowledgement
-
-
-            <span class="required" aria-hidden="true">*</span>
-
-        </label>
-
-        <div class="description">By signing below, I acknowledge the following:
-        1. Mission Statement Agreement: I have read and agree with the mission statement and affirmations provided by Save Girls’ Sports.
-        2. By providing your contact information, you consent to be added to Advocates for Faith and Freedom’s mailing list for updates related to Save Girls’ Sports and other communications from Advocates for Faith and Freedom.
-
-        By typing my name, I confirm that I have read, understood, and agreed to the above acknowledgments and responsibilities.
-        Typing my name serves as my electronic signature.</div>
-        <input class="field-element text" type="text" id="ee937708-36a0-4d26-b894-326710667749-field" placeholder="Type your name." aria-required="true"/>
-    </div>
-
-    <div id="text-726b8518-a80e-4dbc-b0c6-8f3ae030179c" class="form-item field text required">
-
-        <label class="title" for="text-726b8518-a80e-4dbc-b0c6-8f3ae030179c-field">
-
-                          Parent Acknowledgement
-
-
-            <span class="required" aria-hidden="true">*</span>
-
-        </label>
-
-        <div class="description">By signing below, I acknowledge the following:
-        1. Mission Statement Agreement: I have read and agree with the mission statement and affirmations provided by Save Girls’ Sports.
-        2. By providing your contact information, you consent to be added to Advocates for Faith and Freedom’s mailing list for updates related to Save Girls’ Sports and other communications from Advocates for Faith and Freedom.
-
-        By typing my name, I confirm that I have read, understood, and agreed to the above acknowledgments and responsibilities.
-        Typing my name serves as my electronic signature.</div>
-        <input class="field-element text" type="text" id="text-726b8518-a80e-4dbc-b0c6-8f3ae030179c-field" placeholder="Type your name." aria-required="true"/>
-    </div>
-
-</div>
-
-<div class="captcha-container
-        align-left
-
-
-        " data-theme="light"></div>
-
-<div data-animation-role="button" class="
-          form-button-wrapper
-
-            form-button-wrapper--align-center
-
-        ">
-    <input class="button sqs-system-button sqs-editable-button sqs-button-element--primary" type="submit" value="Submit"/>
-</div>
-
-<div class="hidden form-submission-text">Thank you!</div>
-<div class="hidden form-submission-html" data-submission-html=""></div>
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var gform;
+    gform || (document.addEventListener("gform_main_scripts_loaded", function() {
+      gform.scriptsLoaded = !0
+    }), document.addEventListener("gform/theme/scripts_loaded", function() {
+      gform.themeScriptsLoaded = !0
+    }), window.addEventListener("DOMContentLoaded", function() {
+      gform.domLoaded = !0
+    }), gform = {
+      domLoaded: !1,
+      scriptsLoaded: !1,
+      themeScriptsLoaded: !1,
+      isFormEditor: () => "function" == typeof InitializeEditor,
+      callIfLoaded: function(o) {
+        return !(!gform.domLoaded || !gform.scriptsLoaded || !gform.themeScriptsLoaded && !gform.isFormEditor() || (gform.isFormEditor() && console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."), o(), 0))
+      },
+      initializeOnLoaded: function(o) {
+        gform.callIfLoaded(o) || (document.addEventListener("gform_main_scripts_loaded", () => {
+          gform.scriptsLoaded = !0, gform.callIfLoaded(o)
+        }), document.addEventListener("gform/theme/scripts_loaded", () => {
+          gform.themeScriptsLoaded = !0, gform.callIfLoaded(o)
+        }), window.addEventListener("DOMContentLoaded", () => {
+          gform.domLoaded = !0, gform.callIfLoaded(o)
+        }))
+      },
+      hooks: {
+        action: {},
+        filter: {}
+      },
+      addAction: function(o, r, e, t) {
+        gform.addHook("action", o, r, e, t)
+      },
+      addFilter: function(o, r, e, t) {
+        gform.addHook("filter", o, r, e, t)
+      },
+      doAction: function(o) {
+        gform.doHook("action", o, arguments)
+      },
+      applyFilters: function(o) {
+        return gform.doHook("filter", o, arguments)
+      },
+      removeAction: function(o, r) {
+        gform.removeHook("action", o, r)
+      },
+      removeFilter: function(o, r, e) {
+        gform.removeHook("filter", o, r, e)
+      },
+      addHook: function(o, r, e, t, n) {
+        null == gform.hooks[o][r] && (gform.hooks[o][r] = []);
+        var d = gform.hooks[o][r];
+        null == n && (n = r + "_" + d.length), gform.hooks[o][r].push({
+          tag: n,
+          callable: e,
+          priority: t = null == t ? 10 : t
+        })
+      },
+      doHook: function(r, o, e) {
+        var t;
+        if (e = Array.prototype.slice.call(e, 1), null != gform.hooks[r][o] && ((o = gform.hooks[r][o]).sort(function(o, r) {
+            return o.priority - r.priority
+          }), o.forEach(function(o) {
+            "function" != typeof(t = o.callable) && (t = window[t]), "action" == r ? t.apply(null, e) : e[0] = t.apply(null, e)
+          })), "filter" == r) return e[0]
+      },
+      removeHook: function(o, r, t, n) {
+        var e;
+        null != gform.hooks[o][r] && (e = (e = gform.hooks[o][r]).filter(function(o, r, e) {
+          return !!(null != n && n != o.tag || null != t && t != o.priority)
+        }), gform.hooks[o][r] = e)
+      }
+    });
+    /* ]]> */
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="noarchive">
+  <meta name="“facebook-domain-verification”" content="“2qqzfsbrb8hs0yfa5fp4yzy8czgwrn”">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <style>
+    img:is([sizes="auto" i], [sizes^="auto," i]) {
+      contain-intrinsic-size: 3000px 1500px
+    }
+  </style>
+
+  <!-- Google Tag Manager for WordPress by gtm4wp.com -->
+  <script data-cfasync="false" data-pagespeed-no-defer="">
+    var gtm4wp_datalayer_name = "dataLayer";
+    var dataLayer = dataLayer || [];
+  </script>
+  <!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+  <!-- This site is optimized with the Yoast SEO plugin v24.3 - https://yoast.com/wordpress/plugins/seo/ -->
+  <title>Submit Your Concern - Do No Harm</title>
+  <meta name="description" content="Have you seen radical, divisive ideology or race-based discrimination creep into healthcare or medical education? Whether you’re a physician, patient, or student, we want to hear your story and help you fight back.">
+  <link rel="canonical" href="https://donoharmmedicine.org/share-your-concern/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Share Your Concern">
+  <meta property="og:description" content="Have you seen a radical, divisive ideology creep into healthcare? We want to hear your story and help you fight back.">
+  <meta property="og:url" content="https://donoharmmedicine.org/share-your-concern/">
+  <meta property="og:site_name" content="Do No Harm">
+  <meta property="article:publisher" content="https://www.facebook.com/donoharmmedicine">
+  <meta property="article:modified_time" content="2025-01-22T17:33:18+00:00">
+  <meta property="og:image" content="https://donoharmmedicine.org/wp-content/uploads/2024/03/Website-Placeholder-1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Share Your Concern">
+  <meta name="twitter:description" content="Have you seen a radical, divisive ideology creep into healthcare? We want to hear your story and help you fight back.">
+  <meta name="twitter:site" content="@donoharm">
+  <script type="application/ld+json" class="yoast-schema-graph">
+    {
+      "@context": "https://schema.org",
+      "@graph": [{
+        "@type": "WebPage",
+        "@id": "https://donoharmmedicine.org/share-your-concern/",
+        "url": "https://donoharmmedicine.org/share-your-concern/",
+        "name": "Submit Your Concern - Do No Harm",
+        "isPartOf": {
+          "@id": "https://donoharmmedicine.org/#website"
+        },
+        "datePublished": "2022-03-22T19:36:30+00:00",
+        "dateModified": "2025-01-22T17:33:18+00:00",
+        "description": "Have you seen radical, divisive ideology or race-based discrimination creep into healthcare or medical education? Whether you’re a physician, patient, or student, we want to hear your story and help you fight back.",
+        "breadcrumb": {
+          "@id": "https://donoharmmedicine.org/share-your-concern/#breadcrumb"
+        },
+        "inLanguage": "en-US",
+        "potentialAction": [{
+          "@type": "ReadAction",
+          "target": ["https://donoharmmedicine.org/share-your-concern/"]
+        }]
+      }, {
+        "@type": "BreadcrumbList",
+        "@id": "https://donoharmmedicine.org/share-your-concern/#breadcrumb",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://donoharmmedicine.org/"
+        }, {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Submit Your Concern"
+        }]
+      }, {
+        "@type": "WebSite",
+        "@id": "https://donoharmmedicine.org/#website",
+        "url": "https://donoharmmedicine.org/",
+        "name": "Do No Harm",
+        "description": "Protecting healthcare from the disastrous consequences of identity politics.",
+        "publisher": {
+          "@id": "https://donoharmmedicine.org/#organization"
+        },
+        "potentialAction": [{
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://donoharmmedicine.org/?s={search_term_string}"
+          },
+          "query-input": {
+            "@type": "PropertyValueSpecification",
+            "valueRequired": true,
+            "valueName": "search_term_string"
+          }
+        }],
+        "inLanguage": "en-US"
+      }, {
+        "@type": "Organization",
+        "@id": "https://donoharmmedicine.org/#organization",
+        "name": "Do No Harm",
+        "url": "https://donoharmmedicine.org/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "en-US",
+          "@id": "https://donoharmmedicine.org/#/schema/logo/image/",
+          "url": "https://donoharmmedicine.org/wp-content/uploads/2022/04/logo.png",
+          "contentUrl": "https://donoharmmedicine.org/wp-content/uploads/2022/04/logo.png",
+          "width": 390,
+          "height": 326,
+          "caption": "Do No Harm"
+        },
+        "image": {
+          "@id": "https://donoharmmedicine.org/#/schema/logo/image/"
+        },
+        "sameAs": ["https://www.facebook.com/donoharmmedicine", "https://x.com/donoharm", "https://www.instagram.com/donoharmmedicine/", "https://www.linkedin.com/company/do-no-harm-medicine/", "https://www.youtube.com/channel/UCHzO8y3s8Ac2DSBuEzqaG4w"]
+      }]
+    }
+  </script>
+  <!-- / Yoast SEO plugin. -->
+
+
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="alternate" type="application/rss+xml" title="Do No Harm » Feed" href="https://donoharmmedicine.org/feed/">
+  <link rel="stylesheet" id="wp-block-library-css" href="https://donoharmmedicine.org/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+  <style id="global-styles-inline-css" type="text/css">
+    :root {
+      --wp--preset--aspect-ratio--square: 1;
+      --wp--preset--aspect-ratio--4-3: 4/3;
+      --wp--preset--aspect-ratio--3-4: 3/4;
+      --wp--preset--aspect-ratio--3-2: 3/2;
+      --wp--preset--aspect-ratio--2-3: 2/3;
+      --wp--preset--aspect-ratio--16-9: 16/9;
+      --wp--preset--aspect-ratio--9-16: 9/16;
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--cyan-bluish-gray: #abb8c3;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--pale-pink: #f78da7;
+      --wp--preset--color--vivid-red: #cf2e2e;
+      --wp--preset--color--luminous-vivid-orange: #ff6900;
+      --wp--preset--color--luminous-vivid-amber: #fcb900;
+      --wp--preset--color--light-green-cyan: #7bdcb5;
+      --wp--preset--color--vivid-green-cyan: #00d084;
+      --wp--preset--color--pale-cyan-blue: #8ed1fc;
+      --wp--preset--color--vivid-cyan-blue: #0693e3;
+      --wp--preset--color--vivid-purple: #9b51e0;
+      --wp--preset--color--primary: #3e9ae6;
+      --wp--preset--color--primary-lt: #b2ddff;
+      --wp--preset--color--primary-dk: #1e2a3e;
+      --wp--preset--color--secondary: #141c29;
+      --wp--preset--color--secondary-alt: #283952;
+      --wp--preset--color--accent: #e8a23f;
+      --wp--preset--color--neutral-lt: #eff2f7;
+      --wp--preset--color--neutral-dk: #3a4656;
+      --wp--preset--color--text-color: #141c29;
+      --wp--preset--color--text-muted: #6c7781;
+      --wp--preset--color--text-white: #fcf8f2;
+      --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+      --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+      --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+      --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+      --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+      --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+      --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+      --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+      --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+      --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+      --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+      --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+      --wp--preset--font-size--small: .8rem;
+      --wp--preset--font-size--medium: 1rem;
+      --wp--preset--font-size--large: 1.875rem;
+      --wp--preset--font-size--x-large: 2.375rem;
+      --wp--preset--font-family--font-family-base: Barlow, sans-serif;
+      --wp--preset--font-family--font-family-headings: Barlow Condensed, sans-serif;
+      --wp--preset--font-family--font-family-code: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+      --wp--preset--spacing--20: 0.44rem;
+      --wp--preset--spacing--30: 0.67rem;
+      --wp--preset--spacing--40: 1rem;
+      --wp--preset--spacing--50: 1.5rem;
+      --wp--preset--spacing--60: 2.25rem;
+      --wp--preset--spacing--70: 3.38rem;
+      --wp--preset--spacing--80: 5.06rem;
+      --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+      --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+      --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+      --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+      --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+    }
+
+    :root {
+      --wp--style--global--content-size: 690px;
+      --wp--style--global--wide-size: 930px;
+    }
+
+    :where(body) {
+      margin: 0;
+    }
+
+    .wp-site-blocks>.alignleft {
+      float: left;
+      margin-right: 2em;
+    }
+
+    .wp-site-blocks>.alignright {
+      float: right;
+      margin-left: 2em;
+    }
+
+    .wp-site-blocks>.aligncenter {
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    :where(.wp-site-blocks)>* {
+      margin-block-start: 15px;
+      margin-block-end: 0;
+    }
+
+    :where(.wp-site-blocks)> :first-child {
+      margin-block-start: 0;
+    }
+
+    :where(.wp-site-blocks)> :last-child {
+      margin-block-end: 0;
+    }
+
+    :root {
+      --wp--style--block-gap: 15px;
+    }
+
+    :root :where(.is-layout-flow)> :first-child {
+      margin-block-start: 0;
+    }
+
+    :root :where(.is-layout-flow)> :last-child {
+      margin-block-end: 0;
+    }
+
+    :root :where(.is-layout-flow)>* {
+      margin-block-start: 15px;
+      margin-block-end: 0;
+    }
+
+    :root :where(.is-layout-constrained)> :first-child {
+      margin-block-start: 0;
+    }
+
+    :root :where(.is-layout-constrained)> :last-child {
+      margin-block-end: 0;
+    }
+
+    :root :where(.is-layout-constrained)>* {
+      margin-block-start: 15px;
+      margin-block-end: 0;
+    }
+
+    :root :where(.is-layout-flex) {
+      gap: 15px;
+    }
+
+    :root :where(.is-layout-grid) {
+      gap: 15px;
+    }
+
+    .is-layout-flow>.alignleft {
+      float: left;
+      margin-inline-start: 0;
+      margin-inline-end: 2em;
+    }
+
+    .is-layout-flow>.alignright {
+      float: right;
+      margin-inline-start: 2em;
+      margin-inline-end: 0;
+    }
+
+    .is-layout-flow>.aligncenter {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .is-layout-constrained>.alignleft {
+      float: left;
+      margin-inline-start: 0;
+      margin-inline-end: 2em;
+    }
+
+    .is-layout-constrained>.alignright {
+      float: right;
+      margin-inline-start: 2em;
+      margin-inline-end: 0;
+    }
+
+    .is-layout-constrained>.aligncenter {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+      max-width: var(--wp--style--global--content-size);
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .is-layout-constrained>.alignwide {
+      max-width: var(--wp--style--global--wide-size);
+    }
+
+    body .is-layout-flex {
+      display: flex;
+    }
+
+    .is-layout-flex {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .is-layout-flex> :is(*, div) {
+      margin: 0;
+    }
+
+    body .is-layout-grid {
+      display: grid;
+    }
+
+    .is-layout-grid> :is(*, div) {
+      margin: 0;
+    }
+
+    body {
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+
+    a:where(:not(.wp-element-button)) {
+      text-decoration: underline;
+    }
+
+    :root :where(.wp-element-button, .wp-block-button__link) {
+      background-color: #32373c;
+      border-width: 0;
+      color: #fff;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      padding: calc(0.667em + 2px) calc(1.333em + 2px);
+      text-decoration: none;
+    }
+
+    .has-black-color {
+      color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-color {
+      color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-color {
+      color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-color {
+      color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-color {
+      color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-color {
+      color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-color {
+      color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-color {
+      color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-color {
+      color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-color {
+      color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-color {
+      color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-color {
+      color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-primary-color {
+      color: var(--wp--preset--color--primary) !important;
+    }
+
+    .has-primary-lt-color {
+      color: var(--wp--preset--color--primary-lt) !important;
+    }
+
+    .has-primary-dk-color {
+      color: var(--wp--preset--color--primary-dk) !important;
+    }
+
+    .has-secondary-color {
+      color: var(--wp--preset--color--secondary) !important;
+    }
+
+    .has-secondary-alt-color {
+      color: var(--wp--preset--color--secondary-alt) !important;
+    }
+
+    .has-accent-color {
+      color: var(--wp--preset--color--accent) !important;
+    }
+
+    .has-neutral-lt-color {
+      color: var(--wp--preset--color--neutral-lt) !important;
+    }
+
+    .has-neutral-dk-color {
+      color: var(--wp--preset--color--neutral-dk) !important;
+    }
+
+    .has-text-color-color {
+      color: var(--wp--preset--color--text-color) !important;
+    }
+
+    .has-text-muted-color {
+      color: var(--wp--preset--color--text-muted) !important;
+    }
+
+    .has-text-white-color {
+      color: var(--wp--preset--color--text-white) !important;
+    }
+
+    .has-black-background-color {
+      background-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-background-color {
+      background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-background-color {
+      background-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-background-color {
+      background-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-background-color {
+      background-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-background-color {
+      background-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-background-color {
+      background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-background-color {
+      background-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-primary-background-color {
+      background-color: var(--wp--preset--color--primary) !important;
+    }
+
+    .has-primary-lt-background-color {
+      background-color: var(--wp--preset--color--primary-lt) !important;
+    }
+
+    .has-primary-dk-background-color {
+      background-color: var(--wp--preset--color--primary-dk) !important;
+    }
+
+    .has-secondary-background-color {
+      background-color: var(--wp--preset--color--secondary) !important;
+    }
+
+    .has-secondary-alt-background-color {
+      background-color: var(--wp--preset--color--secondary-alt) !important;
+    }
+
+    .has-accent-background-color {
+      background-color: var(--wp--preset--color--accent) !important;
+    }
+
+    .has-neutral-lt-background-color {
+      background-color: var(--wp--preset--color--neutral-lt) !important;
+    }
+
+    .has-neutral-dk-background-color {
+      background-color: var(--wp--preset--color--neutral-dk) !important;
+    }
+
+    .has-text-color-background-color {
+      background-color: var(--wp--preset--color--text-color) !important;
+    }
+
+    .has-text-muted-background-color {
+      background-color: var(--wp--preset--color--text-muted) !important;
+    }
+
+    .has-text-white-background-color {
+      background-color: var(--wp--preset--color--text-white) !important;
+    }
+
+    .has-black-border-color {
+      border-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-border-color {
+      border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-border-color {
+      border-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-border-color {
+      border-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-border-color {
+      border-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-border-color {
+      border-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-border-color {
+      border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-border-color {
+      border-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-primary-border-color {
+      border-color: var(--wp--preset--color--primary) !important;
+    }
+
+    .has-primary-lt-border-color {
+      border-color: var(--wp--preset--color--primary-lt) !important;
+    }
+
+    .has-primary-dk-border-color {
+      border-color: var(--wp--preset--color--primary-dk) !important;
+    }
+
+    .has-secondary-border-color {
+      border-color: var(--wp--preset--color--secondary) !important;
+    }
+
+    .has-secondary-alt-border-color {
+      border-color: var(--wp--preset--color--secondary-alt) !important;
+    }
+
+    .has-accent-border-color {
+      border-color: var(--wp--preset--color--accent) !important;
+    }
+
+    .has-neutral-lt-border-color {
+      border-color: var(--wp--preset--color--neutral-lt) !important;
+    }
+
+    .has-neutral-dk-border-color {
+      border-color: var(--wp--preset--color--neutral-dk) !important;
+    }
+
+    .has-text-color-border-color {
+      border-color: var(--wp--preset--color--text-color) !important;
+    }
+
+    .has-text-muted-border-color {
+      border-color: var(--wp--preset--color--text-muted) !important;
+    }
+
+    .has-text-white-border-color {
+      border-color: var(--wp--preset--color--text-white) !important;
+    }
+
+    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+      background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+    }
+
+    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+      background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+    }
+
+    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+    }
+
+    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+      background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+    }
+
+    .has-cool-to-warm-spectrum-gradient-background {
+      background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+    }
+
+    .has-blush-light-purple-gradient-background {
+      background: var(--wp--preset--gradient--blush-light-purple) !important;
+    }
+
+    .has-blush-bordeaux-gradient-background {
+      background: var(--wp--preset--gradient--blush-bordeaux) !important;
+    }
+
+    .has-luminous-dusk-gradient-background {
+      background: var(--wp--preset--gradient--luminous-dusk) !important;
+    }
+
+    .has-pale-ocean-gradient-background {
+      background: var(--wp--preset--gradient--pale-ocean) !important;
+    }
+
+    .has-electric-grass-gradient-background {
+      background: var(--wp--preset--gradient--electric-grass) !important;
+    }
+
+    .has-midnight-gradient-background {
+      background: var(--wp--preset--gradient--midnight) !important;
+    }
+
+    .has-small-font-size {
+      font-size: var(--wp--preset--font-size--small) !important;
+    }
+
+    .has-medium-font-size {
+      font-size: var(--wp--preset--font-size--medium) !important;
+    }
+
+    .has-large-font-size {
+      font-size: var(--wp--preset--font-size--large) !important;
+    }
+
+    .has-x-large-font-size {
+      font-size: var(--wp--preset--font-size--x-large) !important;
+    }
+
+    .has-font-family-base-font-family {
+      font-family: var(--wp--preset--font-family--font-family-base) !important;
+    }
+
+    .has-font-family-headings-font-family {
+      font-family: var(--wp--preset--font-family--font-family-headings) !important;
+    }
+
+    .has-font-family-code-font-family {
+      font-family: var(--wp--preset--font-family--font-family-code) !important;
+    }
+
+    :root :where(.wp-block-pullquote) {
+      font-size: 1.5em;
+      line-height: 1.6;
+    }
+  </style>
+  <link rel="stylesheet" id="cmplz-general-css" href="https://donoharmmedicine.org/wp-content/plugins/complianz-gdpr-premium/assets/css/cookieblocker.min.css?ver=1738618566" type="text/css" media="all">
+  <link rel="stylesheet" id="theme-fonts-css" href="//fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400;1,700&amp;family=Barlow:ital,wght@0,400;0,700;1,400;1,700" type="text/css" media="all">
+  <link rel="stylesheet" id="fontawesome-css" href="https://donoharmmedicine.org/wp-content/themes/donoharm2024/assets/styles/fontawesome.min.css?ver=5.15.4" type="text/css" media="all">
+  <link rel="stylesheet" id="styles-css" href="https://donoharmmedicine.org/wp-content/themes/donoharm2024/assets/styles/styles.min.css?ver=1736262677" type="text/css" media="all">
+  <link rel="stylesheet" id="dflip-style-css" href="https://donoharmmedicine.org/wp-content/plugins/3d-flipbook-dflip-lite/assets/css/dflip.min.css?ver=2.3.57" type="text/css" media="all">
+  <style id="akismet-widget-style-inline-css" type="text/css">
+    .a-stats {
+      --akismet-color-mid-green: #357b49;
+      --akismet-color-white: #fff;
+      --akismet-color-light-grey: #f6f7f7;
+
+      max-width: 350px;
+      width: auto;
+    }
+
+    .a-stats * {
+      all: unset;
+      box-sizing: border-box;
+    }
+
+    .a-stats strong {
+      font-weight: 600;
+    }
+
+    .a-stats a.a-stats__link,
+    .a-stats a.a-stats__link:visited,
+    .a-stats a.a-stats__link:active {
+      background: var(--akismet-color-mid-green);
+      border: none;
+      box-shadow: none;
+      border-radius: 8px;
+      color: var(--akismet-color-white);
+      cursor: pointer;
+      display: block;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+      font-weight: 500;
+      padding: 12px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    /* Extra specificity to deal with TwentyTwentyOne focus style */
+    .widget .a-stats a.a-stats__link:focus {
+      background: var(--akismet-color-mid-green);
+      color: var(--akismet-color-white);
+      text-decoration: none;
+    }
+
+    .a-stats a.a-stats__link:hover {
+      filter: brightness(110%);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+    }
+
+    .a-stats .count {
+      color: var(--akismet-color-white);
+      display: block;
+      font-size: 1.5em;
+      line-height: 1.4;
+      padding: 0 13px;
+      white-space: nowrap;
+    }
+  </style>
+  <script type="text/javascript" src="https://donoharmmedicine.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+  <script type="text/javascript" src="https://donoharmmedicine.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+  <link rel="shortlink" href="https://donoharmmedicine.org/?p=16">
+  <!-- start Simple Custom CSS and JS -->
+  <style type="text/css">
+    .gfield_label .gfield_required {
+      margin-left: 3px !important;
+    }
+  </style>
+  <!-- end Simple Custom CSS and JS -->
+
+  <!-- Google Tag Manager for WordPress by gtm4wp.com -->
+  <!-- GTM Container placement set to manual -->
+  <script data-cfasync="false" data-pagespeed-no-defer="" type="text/javascript">
+    var dataLayer_content = [];
+    dataLayer.push(dataLayer_content);
+  </script>
+  <script data-cfasync="false">
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NHR33GX');
+  </script>
+  <!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+  <link rel="icon" href="https://donoharmmedicine.org/wp-content/uploads/2022/03/cropped-favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="https://donoharmmedicine.org/wp-content/uploads/2022/03/cropped-favicon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="https://donoharmmedicine.org/wp-content/uploads/2022/03/cropped-favicon-180x180.png">
+  <meta name="msapplication-TileImage" content="https://donoharmmedicine.org/wp-content/uploads/2022/03/cropped-favicon-270x270.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://donoharmmedicine.org/wp-content/uploads/2022/03/cropped-favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://donoharmmedicine.org/wp-content/uploads/2022/03/cropped-favicon-96x96.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="https://donoharmmedicine.org/wp-content/uploads/2022/03/cropped-favicon-120x120.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="https://donoharmmedicine.org/wp-content/uploads/2022/03/cropped-favicon-152x152.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="https://donoharmmedicine.org/wp-content/uploads/2022/03/cropped-favicon-167x167.png">
+
+</head>
+
+<body class="page-template page-template-template-tip-form page-template-template-tip-form-php page page-id-16">
+
+  <!-- GTM Container placement set to manual -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHR33GX" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- GTM Container placement set to manual -->
+  <!-- Google Tag Manager (noscript) -->
+  <div class="page-top">
+    <header class="site-hero default-hero" role="banner">
+      <div class="site-alert">
+        <div class="container">
+          <p class="alert-text">Does Your Hospital Trans Kids? <a class="alert-link" href="https://stoptheharmdatabase.com/" target="_blank" rel="noopener noreferrer">Find Out Here <i class="link-icon fas fa-arrow-right" aria-hidden="true"></i></a></p>
+        </div><!-- /.container -->
+      </div><!-- /.site-alert -->
+      <div class="hero-main">
+
+        <div class="site-navbar" id="site-navbar">
+          <div class="container">
+
+            <div class="navbar-banner">
+              <div class="navbar-brand">
+                <a class="home-link" href="https://donoharmmedicine.org">
+                  <img class="navbar-logo" src="https://donoharmmedicine.org/wp-content/themes/donoharm2024/assets/images/logo-white-compact.png" alt="Do No Harm">
+                </a>
+              </div><!-- /.navbar-brand -->
+
+              <div class="navbar-aux">
+                <a class="mobile-donate-link" href="https://donoharmmedicine.org/donate">Donate</a>
+
+                <button class="navbar-toggle" id="navbar-toggle" type="button" aria-controls="navbar-collapse" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <i class="toggle-icon fas fa-bars" aria-hidden="true"></i>
+                </button>
+              </div><!-- /.navbar-aux -->
+            </div><!-- /.navbar-banner -->
+
+            <div class="navbar-collapse collapsed" id="navbar-collapse">
+              <div class="collapse-content">
+
+                <nav class="navbar-menu" aria-labelledby="menu-label" role="navigation">
+                  <h2 class="sr-only" id="menu-label">Main Menu</h2>
+                  <ul class="menu-links" role="menubar">
+
+
+
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4062 menu-item-has-children submenu-hidden" data-navdropdown="component">
+                      <button class="menu-link submenu-toggle" data-navdropdown="toggle">Our Story</button>
+                      <ul class="submenu" data-navdropdown="submenu">
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4065">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/about/">About Us</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4072">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/team/">The Team</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4066">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/faqs/">FAQs</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-custom menu-item-object-custom menu-item-4067">
+                          <a class="submenu-link" href="/testimonials">What Others Say</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4096">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/voices-of-dnh/">Voices of Do No Harm</a>
+                        </li>
+                      </ul><!-- /.submenu -->
+                    </li>
+
+
+
+
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4063 menu-item-has-children submenu-hidden" data-navdropdown="component">
+                      <button class="menu-link submenu-toggle" data-navdropdown="toggle">Our Work</button>
+                      <ul class="submenu" data-navdropdown="submenu">
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4113">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/newsroom/">Newsroom</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4078 menu-item-has-children">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/issue-awareness/">Issue Awareness</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4084">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/federal-policy/">Federal Policy</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4094">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/medical-institutions-map/">State Policy</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4102">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/litigation/">Litigation</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4104">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/research/">Research</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4106">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/resources/">Resources</a>
+                        </li>
+                      </ul><!-- /.submenu -->
+                    </li>
+
+
+
+
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-4064 menu-item-has-children submenu-hidden" data-navdropdown="component">
+                      <button class="menu-link submenu-toggle" data-navdropdown="toggle">Get Involved</button>
+                      <ul class="submenu" data-navdropdown="submenu">
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-16 current_page_item menu-item-4107">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/share-your-concern/">Submit a Tip</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4108">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/become-a-member/">Become a Member</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4109">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/donate/">Make a Donation</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4110">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/share-your-testimonial/">Share Your Testimonial</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4105">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/events/">Attend an Event</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4112">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/podcast/">Listen to Our Podcast</a>
+                        </li>
+                        <li class="submenu-item menu-item-type-post_type menu-item-object-page menu-item-4416">
+                          <a class="submenu-link" href="https://donoharmmedicine.org/tell-your-story/">Tell Your Story</a>
+                        </li>
+                      </ul><!-- /.submenu -->
+                    </li>
+
+
+
+                    <li class="menu-item hide-navbar-mobile">
+                      <a class="menu-link donate-link" href="https://donoharmmedicine.org/donate">Donate</a>
+                    </li><!-- /.menu-item -->
+
+                    <li class="menu-item hide-navbar-mobile">
+                      <a class="menu-link media-link" href="https://donoharmmedicine.org/media-inquiries">Media Inquiries</a>
+                    </li><!-- /.menu-item -->
+
+                  </ul><!-- /.menu-links -->
+                </nav><!-- /.navbar-menu -->
+
+                <div class="navbar-social">
+
+                  <ul class="site-social">
+                    <li class="social-item">
+                      <a class="social-link" href="https://twitter.com/donoharm" target="_blank">
+                        <span class="sr-only">Twitter</span>
+                        <svg class="twitter-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+                          <path d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"></path>
+                        </svg>
+                      </a>
+                    </li><!-- /.social-item -->
+                    <li class="social-item">
+                      <a class="social-link" href="https://www.facebook.com/donoharmmedicine" target="_blank">
+                        <span class="sr-only">Facebook</span>
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                      </a>
+                    </li><!-- /.social-item -->
+                    <li class="social-item">
+                      <a class="social-link" href="https://www.instagram.com/donoharmmedicine/" target="_blank">
+                        <span class="sr-only">Instagram</span>
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </li><!-- /.social-item -->
+                    <li class="social-item">
+                      <a class="social-link" href="https://www.linkedin.com/company/do-no-harm-medicine/" target="_blank">
+                        <span class="sr-only">LinkedIn</span>
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                      </a>
+                    </li><!-- /.social-item -->
+                    <li class="social-item">
+                      <a class="social-link" href="https://www.youtube.com/@donoharmmedicine" target="_blank">
+                        <span class="sr-only">YouTube</span>
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                      </a>
+                    </li><!-- /.social-item -->
+                  </ul><!-- /.site-social -->
+                  <a class="search-link" href="/?s">
+                    <span class="sr-only">Search</span>
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                  </a>
+                </div><!-- /.navbar-social -->
+
+              </div><!-- /.collapse-content -->
+            </div><!-- /.navbar-collapse -->
+
+          </div><!-- /.container -->
+        </div><!-- /.site-navbar -->
+        <div class="container">
+        </div><!-- /.container -->
+      </div><!-- /.hero-main -->
+    </header><!-- /.site-hero -->
+  </div><!-- /.page-top -->
+  <div class="page-content flush-bottom full-bleed-layout">
+
+    <main class="site-main" id="site-main" role="main">
+      <article class="post-16 page type-page status-publish hentry" id="post-16">
+        <header class="entry-header">
+
+
+          <h1 class="entry-title">Submit Your Concern</h1>
+
+
+
+        </header><!-- /.entry-header -->
+
+        <div class="entry-content editor-content">
+
+          <p class="has-text-align-center">Have you seen radical, divisive ideology&nbsp;or race-based discrimination&nbsp;creep into healthcare&nbsp;or medical education?&nbsp;Whether you’re a physician, patient, or student, we want to hear your story and help you fight back.</p>
+
+
+
+          <p></p>
+
+
+        </div><!-- /.entry-content -->
+
+      </article><!-- /.entry -->
+
+
+
+      <section class="site-accordion sharing-faqs">
+        <div class="container">
+          <h2 class="accordion-title">Q&amp;A for Submitting Concerns</h2>
+          <div class="accordion about-accordion" id="about-accordion" data-accordion="">
+            <div class="accordion-panel" data-accordion="panel">
+              <h3 class="panel-heading" id="about-accordion-1-heading">
+                <button class="panel-toggle collapsed" type="button" aria-expanded="false" aria-controls="about-accordion-1-content" data-toggle="accordion" data-close="true">
+                  <span class="heading-text">Will my story remain anonymous?</span>
+                  <i class="toggle-icon far fa-angle-down" aria-hidden="true"></i>
+                </button>
+              </h3>
+              <div class="panel-collapse collapsed" id="about-accordion-1-content" aria-labelledby="about-accordion-1-heading" data-accordion="collapse">
+                <div class="panel-content">
+                  <p><span style="font-weight: 400;">Yes. We recognize that confronting identity politics and calling out divisive ideology carries personal and professional risks. Protecting your privacy is our number-one priority.</span></p>
+
+                </div><!-- /.panel-content -->
+              </div><!-- /.accordion-collapse -->
+            </div><!-- /.accordion-panel -->
+            <div class="accordion-panel" data-accordion="panel">
+              <h3 class="panel-heading" id="about-accordion-2-heading">
+                <button class="panel-toggle collapsed" type="button" aria-expanded="false" aria-controls="about-accordion-2-content" data-toggle="accordion" data-close="true">
+                  <span class="heading-text">What types of stories are you looking for?</span>
+                  <i class="toggle-icon far fa-angle-down" aria-hidden="true"></i>
+                </button>
+              </h3>
+              <div class="panel-collapse collapsed" id="about-accordion-2-content" aria-labelledby="about-accordion-2-heading" data-accordion="collapse">
+                <div class="panel-content">
+                  <p>We’re interested in stories that illustrate the radicalization taking place across healthcare. That includes “anti-racist” physician training; race-based restrictions on medical treatments; radical ideology in the medical school classroom; the weakening of standards in medical scholarship and training;&nbsp;race-based eligibility&nbsp;restrictions for medical school scholarships, fellowships, or programs,&nbsp;and more.</p>
+
+                </div><!-- /.panel-content -->
+              </div><!-- /.accordion-collapse -->
+            </div><!-- /.accordion-panel -->
+            <div class="accordion-panel" data-accordion="panel">
+              <h3 class="panel-heading" id="about-accordion-3-heading">
+                <button class="panel-toggle collapsed" type="button" aria-expanded="false" aria-controls="about-accordion-3-content" data-toggle="accordion" data-close="true">
+                  <span class="heading-text">What if I want to go public?</span>
+                  <i class="toggle-icon far fa-angle-down" aria-hidden="true"></i>
+                </button>
+              </h3>
+              <div class="panel-collapse collapsed" id="about-accordion-3-content" aria-labelledby="about-accordion-3-heading" data-accordion="collapse">
+                <div class="panel-content">
+                  <p><span style="font-weight: 400;">We’re happy to help. Please write to us if you’re willing to tell your story publicly and we’ll look for opportunities to support you.</span></p>
+
+                </div><!-- /.panel-content -->
+              </div><!-- /.accordion-collapse -->
+            </div><!-- /.accordion-panel -->
+            <div class="accordion-panel" data-accordion="panel">
+              <h3 class="panel-heading" id="about-accordion-4-heading">
+                <button class="panel-toggle collapsed" type="button" aria-expanded="false" aria-controls="about-accordion-4-content" data-toggle="accordion" data-close="true">
+                  <span class="heading-text">How will my concern be used?</span>
+                  <i class="toggle-icon far fa-angle-down" aria-hidden="true"></i>
+                </button>
+              </h3>
+              <div class="panel-collapse collapsed" id="about-accordion-4-content" aria-labelledby="about-accordion-4-heading" data-accordion="collapse">
+                <div class="panel-content">
+                  <p>Submitted concerns are often the first step in the process of exposing harmful practices in medicine. These tips will be used to submit document requests, file civil rights complaints, pursue litigation, or bring awareness to bad actors in healthcare. Please include as much information/evidence as possible so we can pursue your concern to the fullest extent.</p>
+
+                </div><!-- /.panel-content -->
+              </div><!-- /.accordion-collapse -->
+            </div><!-- /.accordion-panel -->
+          </div><!-- /.accordion -->
+        </div><!-- /.container -->
+      </section><!-- /.site-accordion -->
+
+      <section class="tip-form" id="tip-form">
+        <div class="container">
+          <script type="text/javascript"></script>
+          <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework bottom-align-inputs_wrapper" data-form-theme="gravity-theme" data-form-index="0" id="gform_wrapper_13">
+            <div id="gf_13" class="gform_anchor" tabindex="-1"></div>
+            <div class="gform_heading">
+              <h2 class="gform_title">Submit Your Concern</h2>
+              <p class="gform_description">Have you seen divisive ideology or discrimination at your healthcare employer, medical school, or medical provider? Or have you seen children or adolescents given inappropriate medical treatments related to their gender issues? Let us know anonymously.</p>
+              <p class="gform_required_legend">"<span class="gfield_required gfield_required_asterisk">*</span>" indicates required fields</p>
+            </div>
+            <form method="post" enctype="multipart/form-data" target="gform_ajax_frame_13" id="gform_13" class="bottom-align-inputs" action="/share-your-concern/#gf_13" data-formid="13" novalidate="">
+              <div class="gform-body gform_body">
+                <div id="gform_fields_13" class="gform_fields top_label form_sublabel_below description_below validation_below">
+                  <div id="field_13_20" class="gfield gfield--type-select gfield--input-type-select gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_20"><label class="gfield_label gform-field-label" for="input_13_20">This tip is about...<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                    <div class="ginput_container ginput_container_select"><select name="input_20" id="input_13_20" class="small gfield_select" aria-required="true" aria-invalid="false">
+                        <option value="DEI">DEI</option>
+                        <option value="Gender Ideology">Gender Ideology</option>
+                        <option value="Other">Other</option>
+                      </select></div>
+                  </div>
+                  <div id="field_13_8" class="gfield gfield--type-text gfield--input-type-text gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_8"><label class="gfield_label gform-field-label" for="input_13_8">Doctor, school, hospital, or clinic involved (or “n/a”)<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                    <div class="ginput_container ginput_container_text"><input name="input_8" id="input_13_8" type="text" value="" class="small" maxlength="30" aria-required="true" aria-invalid="false"></div>
+                  </div>
+                  <div id="field_13_9" class="gfield gfield--type-text gfield--input-type-text gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_9"><label class="gfield_label gform-field-label" for="input_13_9">Location of doctor, school, hospital, or clinic involved (or your location)<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                    <div class="ginput_container ginput_container_text"><input name="input_9" id="input_13_9" type="text" value="" class="small" maxlength="30" aria-required="true" aria-invalid="false"></div>
+                  </div>
+                  <div id="field_13_13" class="gfield gfield--type-text gfield--input-type-text gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_13"><label class="gfield_label gform-field-label" for="input_13_13">Date of incident<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                    <div class="ginput_container ginput_container_text"><input name="input_13" id="input_13_13" type="text" value="" class="small" maxlength="10" aria-required="true" aria-invalid="false"></div>
+                  </div>
+                  <div id="field_13_12" class="gfield gfield--type-text gfield--input-type-text gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_12"><label class="gfield_label gform-field-label" for="input_13_12">Your Name</label>
+                    <div class="ginput_container ginput_container_text"><input name="input_12" id="input_13_12" type="text" value="" class="small" maxlength="30" aria-invalid="false"></div>
+                  </div>
+                  <div id="field_13_21" class="gfield gfield--type-email gfield--input-type-email gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_21"><label class="gfield_label gform-field-label" for="input_13_21">Your Email Address (Only Used For Incident Follow-Up)</label>
+                    <div class="ginput_container ginput_container_email">
+                      <input name="input_21" id="input_13_21" type="email" value="" class="medium" aria-invalid="false" maxlength="40">
+                    </div>
+                  </div>
+                  <div id="field_13_10" class="gfield gfield--type-text gfield--input-type-text gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_10"><label class="gfield_label gform-field-label" for="input_13_10">Your Phone Number</label>
+                    <div class="ginput_container ginput_container_text"><input name="input_10" id="input_13_10" type="text" value="" class="small" maxlength="15" aria-invalid="false"></div>
+                  </div>
+                  <div id="field_13_16" class="gfield gfield--type-select gfield--input-type-select gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_16"><label class="gfield_label gform-field-label" for="input_13_16">I am a...</label>
+                    <div class="ginput_container ginput_container_select"><select name="input_16" id="input_13_16" class="small gfield_select" aria-invalid="false">
+                        <option value="Physician (MD; DO; DPM; DDS; DC)">Physician (MD; DO; DPM; DDS; DC)</option>
+                        <option value="Nurse or Nurse Practitioner/APRN">Nurse or Nurse Practitioner/APRN</option>
+                        <option value="Other Practitioner/Clinician">Other Practitioner/Clinician</option>
+                        <option value="Administrator">Administrator</option>
+                        <option value="Concerned Citizen or Patient">Concerned Citizen or Patient</option>
+                        <option value="Policymaker">Policymaker</option>
+                        <option value="Parent">Parent</option>
+                        <option value="Faculty Member or Academic">Faculty Member or Academic</option>
+                        <option value="Researcher">Researcher</option>
+                      </select></div>
+                  </div>
+                  <fieldset id="field_13_15" class="gfield gfield--type-checkbox gfield--type-choice gfield--input-type-checkbox gfield--width-full field-privacy field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_15">
+                    <legend class="gfield_label gform-field-label gfield_label_before_complex">Privacy</legend>
+                    <div class="ginput_container ginput_container_checkbox">
+                      <div class="gfield_checkbox " id="input_13_15">
+                        <div class="gchoice gchoice_13_15_1">
+                          <input class="gfield-choice-input" name="input_15.1" type="checkbox" value="I would like to be kept anonymous" id="choice_13_15_1">
+                          <label for="choice_13_15_1" id="label_13_15_1" class="gform-field-label gform-field-label--type-inline">I would like to be kept anonymous</label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div id="field_13_7" class="gfield gfield--type-textarea gfield--input-type-textarea gfield--width-full message-field gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_7"><label class="gfield_label gform-field-label" for="input_13_7">Incident details (Include As Much Information As Possible)<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                    <div class="ginput_container ginput_container_textarea"><textarea name="input_7" id="input_13_7" class="textarea large" maxlength="500" aria-required="true" aria-invalid="false" rows="10" cols="50"></textarea></div>
+                  </div>
+                  <div id="field_13_14" class="gfield gfield--type-fileupload gfield--input-type-fileupload document-field field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_14"><label class="gfield_label gform-field-label" for="gform_browse_button_13_14">Upload Documents (Full File Uploads Of Documents Are Preferred Over Screenshots)</label>
+                    <div class="ginput_container ginput_container_fileupload">
+                      <div id="gform_multifile_upload_13_14" data-settings="{&quot;runtimes&quot;:&quot;html5,flash,html4&quot;,&quot;browse_button&quot;:&quot;gform_browse_button_13_14&quot;,&quot;container&quot;:&quot;gform_multifile_upload_13_14&quot;,&quot;drop_element&quot;:&quot;gform_drag_drop_area_13_14&quot;,&quot;filelist&quot;:&quot;gform_preview_13_14&quot;,&quot;unique_names&quot;:true,&quot;file_data_name&quot;:&quot;file&quot;,&quot;url&quot;:&quot;https:\/\/donoharmmedicine.org\/?gf_page=9eba599bfeea2b3&quot;,&quot;flash_swf_url&quot;:&quot;https:\/\/donoharmmedicine.org\/wp-includes\/js\/plupload\/plupload.flash.swf&quot;,&quot;silverlight_xap_url&quot;:&quot;https:\/\/donoharmmedicine.org\/wp-includes\/js\/plupload\/plupload.silverlight.xap&quot;,&quot;filters&quot;:{&quot;mime_types&quot;:[{&quot;title&quot;:&quot;Allowed Files&quot;,&quot;extensions&quot;:&quot;doc,docx,pdf,png,jpg&quot;}],&quot;max_file_size&quot;:&quot;5242880b&quot;},&quot;multipart&quot;:true,&quot;urlstream_upload&quot;:false,&quot;multipart_params&quot;:{&quot;form_id&quot;:13,&quot;field_id&quot;:14},&quot;gf_vars&quot;:{&quot;max_files&quot;:&quot;3&quot;,&quot;message_id&quot;:&quot;gform_multifile_messages_13_14&quot;,&quot;disallowed_extensions&quot;:[&quot;php&quot;,&quot;asp&quot;,&quot;aspx&quot;,&quot;cmd&quot;,&quot;csh&quot;,&quot;bat&quot;,&quot;html&quot;,&quot;htm&quot;,&quot;hta&quot;,&quot;jar&quot;,&quot;exe&quot;,&quot;com&quot;,&quot;js&quot;,&quot;lnk&quot;,&quot;htaccess&quot;,&quot;phtml&quot;,&quot;ps1&quot;,&quot;ps2&quot;,&quot;php3&quot;,&quot;php4&quot;,&quot;php5&quot;,&quot;php6&quot;,&quot;py&quot;,&quot;rb&quot;,&quot;tmp&quot;]}}" class="gform_fileupload_multifile">
+                        <div id="gform_drag_drop_area_13_14" class="gform_drop_area gform-theme-field-control">
+                          <span class="gform_drop_instructions">Drop files here or </span>
+                          <button type="button" id="gform_browse_button_13_14" class="button gform_button_select_files gform-theme-button gform-theme-button--control" aria-describedby="gfield_upload_rules_13_14">Select files</button>
+                        </div>
+                      </div><span class="gfield_description gform_fileupload_rules" id="gfield_upload_rules_13_14">Accepted file types: doc, docx, pdf, png, jpg, Max. file size: 5 MB, Max. files: 3.</span>
+                      <ul class="validation_message--hidden-on-empty gform-ul-reset" id="gform_multifile_messages_13_14"></ul> <!-- Leave <ul> empty to support CSS :empty selector. -->
+                    </div>
+                    <div id="gform_preview_13_14" class="ginput_preview_list"></div>
+                  </div>
+                  <div id="field_13_18" class="gfield gfield--type-html gfield--input-type-html gfield--width-full gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_18">Do No Harm is not a legal or social service agency and cannot provide legal, medical, or social services referrals. While we will attempt to direct you to relevant resources, Do No Harm is not equipped to help individuals with case work, but rather is designed to assist advocates, policymakers, and members of the media. Note that we may be unable to direct you to relevant resources in your area.
+                    <br><br>
+
+                    Our staff may reach out to you via email, text message, or a phone call for additional information concerning any comments that you submit to Do No Harm. There is no obligation to respond to any inquiry from Do No Harm. We also value your privacy, and will never quote you or share your name without your permission. You can decide whether to share information on the record, in which case the information you share may be published or quoted by Do No Harm.
+                  </div>
+                  <fieldset id="field_13_17" class="gfield gfield--type-consent gfield--type-choice gfield--input-type-consent consent-checkbox gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_17">
+                    <legend class="gfield_label gform-field-label gfield_label_before_complex">Consent<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></legend>
+                    <div class="ginput_container ginput_container_consent"><input name="input_17.1" id="input_13_17_1" type="checkbox" value="1" aria-required="true" aria-invalid="false"> <label class="gform-field-label gform-field-label--type-inline gfield_consent_label" for="input_13_17_1">I am 18 years of age or older and agree that Do No Harm may contact me for additional information concerning my submission.</label><input type="hidden" name="input_17.2" value="I am 18 years of age or older and agree that Do No Harm may contact me for additional information concerning my submission." class="gform_hidden"><input type="hidden" name="input_17.3" value="1" class="gform_hidden"></div>
+                  </fieldset>
+                  <div id="field_13_19" class="gfield gfield--type-captcha gfield--input-type-captcha gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-js-reload="field_13_19"><label class="gfield_label gform-field-label" for="input_13_19">CAPTCHA</label>
+                    <div id="input_13_19" class="ginput_container ginput_recaptcha" data-sitekey="6Lcx2ZgjAAAAAGSeKiFcBZakfW0-jTIQDRBgZmbj" data-theme="light" data-tabindex="-1" data-size="invisible" data-badge="inline"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="gform-footer gform_footer top_label"> <input type="submit" id="gform_submit_button_13" class="gform_button button" onclick="gform.submission.handleButtonClick(this);" value="Submit"> <input type="hidden" name="gform_ajax" value="form_id=13&amp;title=1&amp;description=1&amp;tabindex=0&amp;theme=gravity-theme&amp;styles=[]&amp;hash=798f425fc8e04c684b13c9f7490e6f57">
+                <input type="hidden" class="gform_hidden" name="gform_submission_method" data-js="gform_submission_method_13" value="iframe">
+                <input type="hidden" class="gform_hidden" name="gform_theme" data-js="gform_theme_13" id="gform_theme_13" value="gravity-theme">
+                <input type="hidden" class="gform_hidden" name="gform_style_settings" data-js="gform_style_settings_13" id="gform_style_settings_13" value="[]">
+                <input type="hidden" class="gform_hidden" name="is_submit_13" value="1">
+                <input type="hidden" class="gform_hidden" name="gform_submit" value="13">
+
+                <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+                <input type="hidden" class="gform_hidden" name="state_13" value="WyJ7XCIyMFwiOltcIjg1ZTVlOTZiNDdlNWY0YzhmNTBhNDZjODFiZmJiYzZkXCIsXCJjMmQ3OTFlZjVhYTllNDFlNDA1NWM1NzI2M2QxYWViN1wiLFwiMzg0YmVlYjNmYzBlMjI3ZTk5YmI5OGIzZGQzNGQ0YjFcIl0sXCIxNy4xXCI6XCI5MTI4MDc4YTcwNWEyMTViMDE2NDQyNjBhMzU2ZDM1NlwiLFwiMTcuMlwiOlwiODdkZmMyOWE5NWI5MzIzODhkODE2NTQ2YTgzZjA5ODhcIixcIjE3LjNcIjpcIjkxMjgwNzhhNzA1YTIxNWIwMTY0NDI2MGEzNTZkMzU2XCJ9IiwiMjE3YzlkMjg3NTE5NjI5ZDdjNGNhZGU4OGIxNzhkMzgiXQ==">
+                <input type="hidden" autocomplete="off" class="gform_hidden" name="gform_target_page_number_13" id="gform_target_page_number_13" value="0">
+                <input type="hidden" autocomplete="off" class="gform_hidden" name="gform_source_page_number_13" id="gform_source_page_number_13" value="1">
+                <input type="hidden" name="gform_field_values" value="">
+                <input type="hidden" name="gform_uploaded_files" id="gform_uploaded_files_13" value="">
+              </div>
+              <p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="198">
+                <script>
+                  document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());
+                </script>
+              </p>
+            </form>
+          </div>
+          <iframe style="display:none;width:0px;height:0px;" src="about:blank" name="gform_ajax_frame_13" id="gform_ajax_frame_13" title="This iframe contains the logic required to handle Ajax powered Gravity Forms."></iframe>
+          <script type="text/javascript">
+            /* <![CDATA[ */
+            gform.initializeOnLoaded(function() {
+              gformInitSpinner(13, 'https://donoharmmedicine.org/wp-content/plugins/gravityforms/images/spinner.svg', true);
+              jQuery('#gform_ajax_frame_13').on('load', function() {
+                var contents = jQuery(this).contents().find('*').html();
+                var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;
+                if (!is_postback) {
+                  return;
+                }
+                var form_content = jQuery(this).contents().find('#gform_wrapper_13');
+                var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_13').length > 0;
+                var is_redirect = contents.indexOf('gformRedirect(){') >= 0;
+                var is_form = form_content.length > 0 && !is_redirect && !is_confirmation;
+                var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;
+                if (is_form) {
+                  jQuery('#gform_wrapper_13').html(form_content.html());
+                  if (form_content.hasClass('gform_validation_error')) {
+                    jQuery('#gform_wrapper_13').addClass('gform_validation_error');
+                  } else {
+                    jQuery('#gform_wrapper_13').removeClass('gform_validation_error');
+                  }
+                  setTimeout(function() {
+                    /* delay the scroll by 50 milliseconds to fix a bug in chrome */
+                    jQuery(document).scrollTop(jQuery('#gform_wrapper_13').offset().top - mt);
+                  }, 50);
+                  if (window['gformInitDatepicker']) {
+                    gformInitDatepicker();
+                  }
+                  if (window['gformInitPriceFields']) {
+                    gformInitPriceFields();
+                  }
+                  var current_page = jQuery('#gform_source_page_number_13').val();
+                  gformInitSpinner(13, 'https://donoharmmedicine.org/wp-content/plugins/gravityforms/images/spinner.svg', true);
+                  jQuery(document).trigger('gform_page_loaded', [13, current_page]);
+                  window['gf_submitting_13'] = false;
+                } else if (!is_redirect) {
+                  var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();
+                  if (!confirmation_content) {
+                    confirmation_content = contents;
+                  }
+                  jQuery('#gform_wrapper_13').replaceWith(confirmation_content);
+                  jQuery(document).scrollTop(jQuery('#gf_13').offset().top - mt);
+                  jQuery(document).trigger('gform_confirmation_loaded', [13]);
+                  window['gf_submitting_13'] = false;
+                  wp.a11y.speak(jQuery('#gform_confirmation_message_13').text());
+                } else {
+                  jQuery('#gform_13').append(contents);
+                  if (window['gformRedirect']) {
+                    gformRedirect();
+                  }
+                }
+                jQuery(document).trigger("gform_pre_post_render", [{
+                  formId: "13",
+                  currentPage: "current_page",
+                  abort: function() {
+                    this.preventDefault();
+                  }
+                }]);
+                if (event && event.defaultPrevented) {
+                  return;
+                }
+                const gformWrapperDiv = document.getElementById("gform_wrapper_13");
+                if (gformWrapperDiv) {
+                  const visibilitySpan = document.createElement("span");
+                  visibilitySpan.id = "gform_visibility_test_13";
+                  gformWrapperDiv.insertAdjacentElement("afterend", visibilitySpan);
+                }
+                const visibilityTestDiv = document.getElementById("gform_visibility_test_13");
+                let postRenderFired = false;
+
+                function triggerPostRender() {
+                  if (postRenderFired) {
+                    return;
+                  }
+                  postRenderFired = true;
+                  jQuery(document).trigger('gform_post_render', [13, current_page]);
+                  gform.utils.trigger({
+                    event: 'gform/postRender',
+                    native: false,
+                    data: {
+                      formId: 13,
+                      currentPage: current_page
+                    }
+                  });
+                  gform.utils.trigger({
+                    event: 'gform/post_render',
+                    native: false,
+                    data: {
+                      formId: 13,
+                      currentPage: current_page
+                    }
+                  });
+                  if (visibilityTestDiv) {
+                    visibilityTestDiv.parentNode.removeChild(visibilityTestDiv);
+                  }
+                }
+
+                function debounce(func, wait, immediate) {
+                  var timeout;
+                  return function() {
+                    var context = this,
+                      args = arguments;
+                    var later = function() {
+                      timeout = null;
+                      if (!immediate) func.apply(context, args);
+                    };
+                    var callNow = immediate && !timeout;
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                    if (callNow) func.apply(context, args);
+                  };
+                }
+                const debouncedTriggerPostRender = debounce(function() {
+                  triggerPostRender();
+                }, 200);
+                if (visibilityTestDiv && visibilityTestDiv.offsetParent === null) {
+                  const observer = new MutationObserver((mutations) => {
+                    mutations.forEach((mutation) => {
+                      if (mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null) {
+                        debouncedTriggerPostRender();
+                        observer.disconnect();
+                      }
+                    });
+                  });
+                  observer.observe(document.body, {
+                    attributes: true,
+                    childList: false,
+                    subtree: true,
+                    attributeFilter: ['style', 'class'],
+                  });
+                } else {
+                  triggerPostRender();
+                }
+              });
+            });
+            /* ]]> */
+          </script>
+
+        </div><!-- /.container -->
+      </section><!-- /.tip-form -->
+
+    </main><!-- /.site-main -->
+
+
+  </div><!-- /.page-content -->
+  <div class="page-bottom">
+    <footer class="site-footer" id="site-footer" role="contentinfo">
+      <div class="container">
+
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="home-link" href="https://donoharmmedicine.org">
+              <img class="footer-logo" src="https://donoharmmedicine.org/wp-content/themes/donoharm2024/assets/images/logo-white.png" alt="Do No Harm">
+            </a>
+          </div><!-- /.footer-brand -->
+
+          <div class="footer-social">
+
+            <ul class="site-social">
+              <li class="social-item">
+                <a class="social-link" href="https://twitter.com/donoharm" target="_blank">
+                  <span class="sr-only">Twitter</span>
+                  <svg class="twitter-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+                    <path d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"></path>
+                  </svg>
+                </a>
+              </li><!-- /.social-item -->
+              <li class="social-item">
+                <a class="social-link" href="https://www.facebook.com/donoharmmedicine" target="_blank">
+                  <span class="sr-only">Facebook</span>
+                  <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+              </li><!-- /.social-item -->
+              <li class="social-item">
+                <a class="social-link" href="https://www.instagram.com/donoharmmedicine/" target="_blank">
+                  <span class="sr-only">Instagram</span>
+                  <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li><!-- /.social-item -->
+              <li class="social-item">
+                <a class="social-link" href="https://www.linkedin.com/company/do-no-harm-medicine/" target="_blank">
+                  <span class="sr-only">LinkedIn</span>
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </li><!-- /.social-item -->
+              <li class="social-item">
+                <a class="social-link" href="https://www.youtube.com/@donoharmmedicine" target="_blank">
+                  <span class="sr-only">YouTube</span>
+                  <i class="fab fa-youtube" aria-hidden="true"></i>
+                </a>
+              </li><!-- /.social-item -->
+            </ul><!-- /.site-social -->
+            <a class="search-link" href="/?s">
+              <span class="sr-only">Search</span>
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </a>
+          </div><!-- /.footer-social -->
+
+          <div class="footer-aux">
+            <ul class="aux-items">
+              <li class="aux-item">
+                <a class="contact-link" href="/contact-us">Contact</a>
+              </li><!-- /.aux-item -->
+              <li class="aux-item hide-mobile">
+                <a class="search-link" href="/?s">
+                  <span class="sr-only">Search</span>
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                </a>
+              </li><!-- /.aux-item -->
+            </ul><!-- /.aux-items -->
+          </div><!-- /.footer-aux -->
+        </div><!-- /.footer-main -->
+
+        <nav class="footer-menu" role="navigation">
+          <ul class="menu-links">
+            <li class="menu-item">
+              <h3 class="menu-heading">Our Story</h3>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/about/">About Us</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/team/">The Team</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/faqs/">FAQs</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="/testimonials">What Others Say</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/voices-of-dnh/">Voices of Do No Harm</a>
+                </li><!-- /.submenu-item -->
+              </ul><!-- /.submenu -->
+            </li><!-- /.menu-item -->
+            <li class="menu-item">
+              <h3 class="menu-heading">Our Work</h3>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/newsroom/">Newsroom</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/issue-awareness/">Issue Awareness</a>
+                  <ul class="childmenu">
+                    <li class="childmenu-item">
+                      <a class="menu-link" href="https://donoharmmedicine.org/identity-politics-dei/">Identity Politics (DEI)</a>
+                    </li><!-- /.childmenu-item -->
+                    <li class="childmenu-item">
+                      <a class="menu-link" href="https://donoharmmedicine.org/gender-ideology/">Gender Ideology</a>
+                    </li><!-- /.childmenu-item -->
+                  </ul><!-- /.childmenu -->
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/federal-policy/">Federal Policy</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/medical-institutions-map/">State Policy</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/litigation/">Litigation</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/research/">Research</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/resources/">Resources</a>
+                </li><!-- /.submenu-item -->
+              </ul><!-- /.submenu -->
+            </li><!-- /.menu-item -->
+            <li class="menu-item">
+              <h3 class="menu-heading">Get Involved</h3>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/share-your-concern/">Submit a Tip</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/become-a-member/">Become a Member</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/donate/">Make a Donation</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/share-your-testimonial/">Share Your Testimonial</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/events/">Attend an Event</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/podcast/">Listen to Our Podcast</a>
+                </li><!-- /.submenu-item -->
+                <li class="submenu-item">
+                  <a class="menu-link" href="https://donoharmmedicine.org/tell-your-story/">Tell Your Story</a>
+                </li><!-- /.submenu-item -->
+              </ul><!-- /.submenu -->
+            </li><!-- /.menu-item -->
+          </ul><!-- /.menu-links -->
+        </nav><!-- /.footer-menu -->
+
+        <div class="site-info">
+          <p>
+            © Do No Harm 2025 | <a href="https://donoharmmedicine.org/privacy-policy/">Privacy Policy</a> | <a href="https://donoharmmedicine.org/disclaimer">Disclaimer</a>
+          </p>
+        </div><!-- /.site-info -->
+
+      </div><!-- /.container -->
+    </footer><!-- /.site-footer -->
+  </div><!-- /.page-bottom -->
+
+
+  <div class="confirmation-modal modal" id="confirmation-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-wrapper">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="header-top">
+          </div><!-- /.header-top -->
+        </div><!-- /.modal-header -->
+
+        <div class="modal-body">
+          <div class="icon-wrapper">
+            <i class="modal-icon far fa-exclamation-triangle" aria-hidden="true"></i>
+          </div><!-- /.icon-wrapper -->
+          <h2 class="modal-title">Are you sure you want to submit without contact information?</h2>
+          <p class="modal-text">Including an email address allows us to follow up with any clarifications so we can pursue your concern to the fullest extent. We will never share your email and will only use it to follow up on your concern.</p>
+
+        </div><!-- /.modal-body -->
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline btn-submit" id="modal-submit">Yes, submit without contact info</button>
+          <button type="button" class="btn btn-accent btn-cancel" id="modal-return">Go Back</button>
+
+        </div><!-- /.modal-footer -->
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-wrapper -->
+  </div><!-- /.modal -->
+  <link rel="stylesheet" id="dashicons-css" href="https://donoharmmedicine.org/wp-includes/css/dashicons.min.css" type="text/css" media="all">
+  <script type="text/javascript" src="https://donoharmmedicine.org/wp-content/themes/donoharm2024/assets/scripts/index.min.js?ver=1736262677" id="app-scripts-js"></script>
+  <script type="text/javascript" src="https://donoharmmedicine.org/wp-content/themes/donoharm2024/assets/scripts/ajax.min.js?ver=1736262677" id="ajax-scripts-js"></script>
+  <script type="text/javascript" src="https://donoharmmedicine.org/wp-content/plugins/3d-flipbook-dflip-lite/assets/js/dflip.min.js?ver=2.3.57" id="dflip-script-js"></script>
+  <script type="text/javascript" src="https://donoharmmedicine.org/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+  <script type="text/javascript" src="https://donoharmmedicine.org/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+  <script type="text/javascript" src="https://donoharmmedicine.org/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+  <script type="text/javascript" id="wp-i18n-js-after">
+    /* <![CDATA[ */
+    wp.i18n.setLocaleData({
+      'text direction\u0004ltr': ['ltr']
+    });
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="https://donoharmmedicine.org/wp-includes/js/dist/a11y.min.js?ver=3156534cc54473497e14" id="wp-a11y-js"></script>
+  <script type="text/javascript" defer="defer" src="https://donoharmmedicine.org/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.9.3" id="gform_json-js"></script>
+  <script type="text/javascript" id="gform_gravityforms-js-extra">
+    /* <![CDATA[ */
+    var gform_i18n = {
+      "datepicker": {
+        "days": {
+          "monday": "Mo",
+          "tuesday": "Tu",
+          "wednesday": "We",
+          "thursday": "Th",
+          "friday": "Fr",
+          "saturday": "Sa",
+          "sunday": "Su"
+        },
+        "months": {
+          "january": "January",
+          "february": "February",
+          "march": "March",
+          "april": "April",
+          "may": "May",
+          "june": "June",
+          "july": "July",
+          "august": "August",
+          "september": "September",
+          "october": "October",
+          "november": "November",
+          "december": "December"
+        },
+        "firstDay": 0,
+        "iconText": "Select date"
+      }
+    };
+    var gf_legacy_multi = [];
+    var gform_gravityforms = {
+      "strings": {
+        "invalid_file_extension": "This type of file is not allowed. Must be one of the following:",
+        "delete_file": "Delete this file",
+        "in_progress": "in progress",
+        "file_exceeds_limit": "File exceeds size limit",
+        "illegal_extension": "This type of file is not allowed.",
+        "max_reached": "Maximum number of files reached",
+        "unknown_error": "There was a problem while saving the file on the server",
+        "currently_uploading": "Please wait for the uploading to complete",
+        "cancel": "Cancel",
+        "cancel_upload": "Cancel this upload",
+        "cancelled": "Cancelled"
+      },
+      "vars": {
+        "images_url": "https:\/\/donoharmmedicine.org\/wp-content\/plugins\/gravityforms\/images"
+      }
+    };
+    var gf_legacy = {
+      "is_legacy": ""
+    };
+    var gf_global = {
+      "gf_currency_config": {
+        "name": "U.S. Dollar",
+        "symbol_left": "$",
+        "symbol_right": "",
+        "symbol_padding": "",
+        "thousand_separator": ",",
+        "decimal_separator": ".",
+        "decimals": 2,
+        "code": "USD"
+      },
+      "base_url": "https:\/\/donoharmmedicine.org\/wp-content\/plugins\/gravityforms",
+      "number_formats": [],
+      "spinnerUrl": "https:\/\/donoharmmedicine.org\/wp-content\/plugins\/gravityforms\/images\/spinner.svg",
+      "version_hash": "764c4fd6ab60ed0b209b1c6c151446aa",
+      "strings": {
+        "newRowAdded": "New row added.",
+        "rowRemoved": "Row removed",
+        "formSaved": "The form has been saved.  The content contains the link to return and complete the form."
+      }
+    };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" defer="defer" src="https://donoharmmedicine.org/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.9.3" id="gform_gravityforms-js"></script>
+  <script type="text/javascript" defer="defer" src="https://www.google.com/recaptcha/api.js?hl=en#038;render=explicit" id="gform_recaptcha-js"></script>
+  <script type="text/javascript" src="https://donoharmmedicine.org/wp-includes/js/plupload/moxie.min.js?ver=1.3.5" id="moxiejs-js"></script>
+  <script type="text/javascript" src="https://donoharmmedicine.org/wp-includes/js/plupload/plupload.min.js?ver=2.1.9" id="plupload-js"></script>
+  <script type="text/javascript" defer="defer" src="https://donoharmmedicine.org/wp-content/plugins/gravityforms/js/jquery.textareaCounter.plugin.min.js?ver=2.9.3" id="gform_textarea_counter-js"></script>
+  <script type="text/javascript" defer="defer" src="https://donoharmmedicine.org/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=501a987060f4426fb517400c73c7fc1e" id="gform_gravityforms_utils-js"></script>
+  <script type="text/javascript" defer="defer" src="https://donoharmmedicine.org/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=ddd2702ee024d421149a5e61416f1ff5" id="gform_gravityforms_theme_vendors-js"></script>
+  <script type="text/javascript" id="gform_gravityforms_theme-js-extra">
+    /* <![CDATA[ */
+    var gform_theme_config = {
+      "common": {
+        "form": {
+          "honeypot": {
+            "version_hash": "764c4fd6ab60ed0b209b1c6c151446aa"
+          },
+          "ajax": {
+            "ajaxurl": "https:\/\/donoharmmedicine.org\/wp-admin\/admin-ajax.php",
+            "ajax_submission_nonce": "178599747c",
+            "i18n": {
+              "step_announcement": "Step %1$s of %2$s, %3$s",
+              "unknown_error": "There was an unknown error processing your request. Please try again."
+            }
+          }
+        }
+      },
+      "hmr_dev": "",
+      "public_path": "https:\/\/donoharmmedicine.org\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/",
+      "config_nonce": "aae4607e7b"
+    };
+    /* ]]> */
+  </script>
+  <script type="text/javascript" defer="defer" src="https://donoharmmedicine.org/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=cd31c16637eeae0b20e422009e5a8b28" id="gform_gravityforms_theme-js"></script>
+  <script defer="" type="text/javascript" src="https://donoharmmedicine.org/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1738714348" id="akismet-frontend-js"></script>
+  <script data-category="functional">
+  </script>
+  <script data-cfasync="false">
+    var dFlipLocation = "https://donoharmmedicine.org/wp-content/plugins/3d-flipbook-dflip-lite/assets/";
+    var dFlipWPGlobal = {
+      "text": {
+        "toggleSound": "Turn on\/off Sound",
+        "toggleThumbnails": "Toggle Thumbnails",
+        "toggleOutline": "Toggle Outline\/Bookmark",
+        "previousPage": "Previous Page",
+        "nextPage": "Next Page",
+        "toggleFullscreen": "Toggle Fullscreen",
+        "zoomIn": "Zoom In",
+        "zoomOut": "Zoom Out",
+        "toggleHelp": "Toggle Help",
+        "singlePageMode": "Single Page Mode",
+        "doublePageMode": "Double Page Mode",
+        "downloadPDFFile": "Download PDF File",
+        "gotoFirstPage": "Goto First Page",
+        "gotoLastPage": "Goto Last Page",
+        "share": "Share",
+        "mailSubject": "I wanted you to see this FlipBook",
+        "mailBody": "Check out this site {{url}}",
+        "loading": "DearFlip: Loading "
+      },
+      "viewerType": "flipbook",
+      "moreControls": "download,pageMode,startPage,endPage,sound",
+      "hideControls": "",
+      "scrollWheel": "false",
+      "backgroundColor": "#777",
+      "backgroundImage": "",
+      "height": "auto",
+      "paddingLeft": "20",
+      "paddingRight": "20",
+      "controlsPosition": "bottom",
+      "duration": 800,
+      "soundEnable": "true",
+      "enableDownload": "true",
+      "showSearchControl": "false",
+      "showPrintControl": "false",
+      "enableAnnotation": false,
+      "enableAnalytics": "false",
+      "webgl": "true",
+      "hard": "none",
+      "maxTextureSize": "1600",
+      "rangeChunkSize": "524288",
+      "zoomRatio": 1.5,
+      "stiffness": 3,
+      "pageMode": "0",
+      "singlePageMode": "0",
+      "pageSize": "0",
+      "autoPlay": "false",
+      "autoPlayDuration": 5000,
+      "autoPlayStart": "false",
+      "linkTarget": "2",
+      "sharePrefix": "flipbook-"
+    };
+  </script>
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    gform.initializeOnLoaded(function() {
+      jQuery(document).on('gform_post_render', function(event, formId, currentPage) {
+        if (formId == 13) {
+          if (!jQuery('#input_13_8+.ginput_counter').length) {
+            jQuery('#input_13_8').textareaCount({
+              'maxCharacterSize': 30,
+              'originalStyle': 'ginput_counter gfield_description',
+              'truncate': true,
+              'errorStyle': '',
+              'displayFormat': '#input of #max max characters'
+            });
+            jQuery('#input_13_8').next('.ginput_counter').attr('aria-live', 'polite');
+          }
+          if (!jQuery('#input_13_9+.ginput_counter').length) {
+            jQuery('#input_13_9').textareaCount({
+              'maxCharacterSize': 30,
+              'originalStyle': 'ginput_counter gfield_description',
+              'truncate': true,
+              'errorStyle': '',
+              'displayFormat': '#input of #max max characters'
+            });
+            jQuery('#input_13_9').next('.ginput_counter').attr('aria-live', 'polite');
+          }
+          if (!jQuery('#input_13_13+.ginput_counter').length) {
+            jQuery('#input_13_13').textareaCount({
+              'maxCharacterSize': 10,
+              'originalStyle': 'ginput_counter gfield_description',
+              'truncate': true,
+              'errorStyle': '',
+              'displayFormat': '#input of #max max characters'
+            });
+            jQuery('#input_13_13').next('.ginput_counter').attr('aria-live', 'polite');
+          }
+          if (!jQuery('#input_13_12+.ginput_counter').length) {
+            jQuery('#input_13_12').textareaCount({
+              'maxCharacterSize': 30,
+              'originalStyle': 'ginput_counter gfield_description',
+              'truncate': true,
+              'errorStyle': '',
+              'displayFormat': '#input of #max max characters'
+            });
+            jQuery('#input_13_12').next('.ginput_counter').attr('aria-live', 'polite');
+          }
+          if (!jQuery('#input_13_10+.ginput_counter').length) {
+            jQuery('#input_13_10').textareaCount({
+              'maxCharacterSize': 15,
+              'originalStyle': 'ginput_counter gfield_description',
+              'truncate': true,
+              'errorStyle': '',
+              'displayFormat': '#input of #max max characters'
+            });
+            jQuery('#input_13_10').next('.ginput_counter').attr('aria-live', 'polite');
+          }
+          if (!jQuery('#input_13_7+.ginput_counter').length) {
+            jQuery('#input_13_7').textareaCount({
+              'maxCharacterSize': 500,
+              'originalStyle': 'ginput_counter gfield_description',
+              'truncate': true,
+              'errorStyle': '',
+              'displayFormat': '#input of #max max characters'
+            });
+            jQuery('#input_13_7').next('.ginput_counter').attr('aria-live', 'polite');
+          }
+        }
+      });
+      jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit) {})
+    });
+    /* ]]> */
+  </script>
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    gform.initializeOnLoaded(function() {
+      jQuery(document).trigger("gform_pre_post_render", [{
+        formId: "13",
+        currentPage: "1",
+        abort: function() {
+          this.preventDefault();
+        }
+      }]);
+      if (event && event.defaultPrevented) {
+        return;
+      }
+      const gformWrapperDiv = document.getElementById("gform_wrapper_13");
+      if (gformWrapperDiv) {
+        const visibilitySpan = document.createElement("span");
+        visibilitySpan.id = "gform_visibility_test_13";
+        gformWrapperDiv.insertAdjacentElement("afterend", visibilitySpan);
+      }
+      const visibilityTestDiv = document.getElementById("gform_visibility_test_13");
+      let postRenderFired = false;
+
+      function triggerPostRender() {
+        if (postRenderFired) {
+          return;
+        }
+        postRenderFired = true;
+        jQuery(document).trigger('gform_post_render', [13, 1]);
+        gform.utils.trigger({
+          event: 'gform/postRender',
+          native: false,
+          data: {
+            formId: 13,
+            currentPage: 1
+          }
+        });
+        gform.utils.trigger({
+          event: 'gform/post_render',
+          native: false,
+          data: {
+            formId: 13,
+            currentPage: 1
+          }
+        });
+        if (visibilityTestDiv) {
+          visibilityTestDiv.parentNode.removeChild(visibilityTestDiv);
+        }
+      }
+
+      function debounce(func, wait, immediate) {
+        var timeout;
+        return function() {
+          var context = this,
+            args = arguments;
+          var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+          };
+          var callNow = immediate && !timeout;
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+          if (callNow) func.apply(context, args);
+        };
+      }
+      const debouncedTriggerPostRender = debounce(function() {
+        triggerPostRender();
+      }, 200);
+      if (visibilityTestDiv && visibilityTestDiv.offsetParent === null) {
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            if (mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null) {
+              debouncedTriggerPostRender();
+              observer.disconnect();
+            }
+          });
+        });
+        observer.observe(document.body, {
+          attributes: true,
+          childList: false,
+          subtree: true,
+          attributeFilter: ['style', 'class'],
+        });
+      } else {
+        triggerPostRender();
+      }
+    });
+    /* ]]> */
+  </script>
+
+
+
+</body>
+
+</html>
