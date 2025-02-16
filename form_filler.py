@@ -1,4 +1,4 @@
-#! /Users/trezendes/.pyenv/versions/3.13.0/envs/FormFiller/bin/python
+#!/usr/bin/env python3
 
 import argparse
 import datetime
