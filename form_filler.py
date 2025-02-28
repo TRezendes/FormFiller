@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import argparse
-import datetime
 import random
 import time
 from typing import TextIO
@@ -13,6 +12,8 @@ import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 if __name__ == '__main__':
 
@@ -62,7 +63,7 @@ default: %(default)s
     include_files: bool = args.include_files
     windowed: bool = args.windowed
 
-    form_url: str = 'https://donoharmmedicine.org/share-your-concern/'
+    form_url: str = 'https://enddei.ed.gov/'
 
     fake = Faker()
     fake.add_provider(date_time)
@@ -80,40 +81,21 @@ default: %(default)s
     ) -> None:
         i: int
         for i in range(num_subs):
-            school_name: str = '12345678901234567890123456789012'
-            phone_num: str = '12345678901234567890'
-            email_address: str = '12345678901234567890'
-            while len(school_name) > 30:
+            school_name: str = '123456789012345678901234567890123456789012345678901'
+            email_address: str = '123456789012345678901234567890123456789012345678901'
+            while len(school_name) > 50:
                 school_dict: dict = fake.school_object()
-                school_name = school_dict['school']
-            school_state = school_dict['state']
-            while len(phone_num) > 15:
-                phone_num = fake.phone_number()
-            while len(email_address) > 15:
+                rint: int = random.randint(1,2)
+                if rint == 1:
+                    school_name = school_dict['school']
+                else:
+                    school_name = school_dict['district']
+            while len(email_address) > 50:
                 email_address = fake.profile(fields=['mail'])['mail']
 
-
-            start_date: datetime.date = datetime.date.today() - datetime.timedelta(weeks=60)
-            incident_date: str = datetime.datetime.strftime(fake.date_between_dates(start_date), '%m/%d/%Y')
-
-            input_13_20_value: str = random.choice(['DEI', 'Gender Ideology', 'Other']) # This tip is about...
-            input_13_8_value: str = school_name # Doctor, school, hospital, or clinic involved (or “n/a”)
-            input_13_9_value: str = school_state # Location of doctor, school, hospital, or clinic involved (or your location)
-            input_13_13_value: str = incident_date # Date of incident
-            input_13_12_value: str = fake.name_nonbinary()[:30] # Your Name
-            input_13_21_value: str = email_address # Your Email Address (Only Used For Incident Follow-Up)
-            input_13_10_value: str = phone_num # Your phone number
-            input_13_16_value: str = random.choice([
-                "Physician (MD; DO; DPM; DDS; DC)",
-                "Nurse or Nurse Practitioner/APRN",
-                "Other Practitioner/Clinician",
-                "Administrator",
-                "Concerned Citizen or Patient",
-                "Policymaker",
-                "Parent",
-                "Faculty Member or Academic",
-                "Researcher"
-            ]) # I am a...
+            email_value: str = email_address # Your email (50 char max)
+            location_value: str = school_name # School or school district (50 char max)
+            zipcode_value: str = fake.postcode()[:5] # School or school district ZIP Code 5 char max)
 
             text_url: str
 
@@ -132,17 +114,17 @@ default: %(default)s
                 if response.status_code != 200:
                     content_choice = 'u'
 
-            input_13_7_value: str
+            description_value: str
 
             f: TextIO
             if content_choice == 'u':
                 # Send them to school with the Universal Declaration of Human Rights
                 with open('udohr.txt', 'r') as f:
-                    input_13_7_value = f.read()
-                    input_13_7_value = input_13_7_value[:500] # Incident details (Include As Much Information As Possible)
+                    description_value = f.read()
+                    description_value = ' '.join(description_value.split()[:450]) # Incident details (Include As Much Information As Possible)
             else:
-                input_13_7_value = response.text.replace('<br/>', '')
-                input_13_7_value = input_13_7_value[:500]
+                description_value = response.text.replace('<br/>', '')
+                description_value = ' '.join(description_value.split()[:450])
 
 
             options = FirefoxOptions()
@@ -154,34 +136,24 @@ default: %(default)s
                 # Get a good view of the form doing its thing
                 browser.maximize_window()
             browser.get(form_url)
-            time.sleep(15)
+            sleep_time: int = random.randint(2,30)
+            print(f'sleeping for {sleep_time} seconds...')
+            time.sleep(sleep_time)
+            print('Annnnd...GO!')
 
-            input_13_20 = browser.find_element(By.ID, 'input_13_20')
-            input_13_20.send_keys(input_13_20_value)
-            input_13_8 = browser.find_element(By.ID, 'input_13_8') # maxlength = 30
-            input_13_8.send_keys(input_13_8_value)
-            input_13_9 = browser.find_element(By.ID, 'input_13_9') # maxlength = 30
-            input_13_9.send_keys(input_13_9_value)
-            input_13_13 = browser.find_element(By.ID, 'input_13_13') # maxlength = 10
-            input_13_13.send_keys(input_13_13_value)
-            input_13_12 = browser.find_element(By.ID, 'input_13_12') # maxlength = 30
-            input_13_12.send_keys(input_13_12_value)
-            input_13_21 = browser.find_element(By.ID, 'input_13_21') # maxlength = 15
-            input_13_21.send_keys(input_13_21_value)
-            input_13_10 = browser.find_element(By.ID, 'input_13_10')
-            input_13_10.send_keys(input_13_10_value)
-            input_13_16 = browser.find_element(By.ID, 'input_13_16')
-            input_13_16.send_keys(input_13_16_value)
-            choice_13_15_1 = browser.find_element(By.ID, 'choice_13_15_1')
-            click_or_not: int = random.randint(0, 100)
-            if click_or_not % 2 == 0:
-                choice_13_15_1.click()
-            input_13_7 = browser.find_element(By.ID, 'input_13_7') # maxlength = 500
-            input_13_7.send_keys(input_13_7_value)
-            input_13_17_1 = browser.find_element(By.ID, 'input_13_17_1')
-            input_13_17_1.click()
-            gform_submit_button_13 = browser.find_element(By.ID, 'gform_submit_button_13')
-            gform_submit_button_13.click()
+            email_input = browser.find_element(By.ID, 'email')
+            email_input.send_keys(email_value)
+            location_input = browser.find_element(By.ID, 'location')
+            location_input.send_keys(location_value)
+            zipcode_input = browser.find_element(By.ID, 'zipcode')
+            zipcode_input.send_keys(zipcode_value)
+            description_input = browser.find_element(By.ID, 'description')
+            description_input.send_keys(description_value)
+            submit_button = browser.find_element(By.ID, 'submitButton')
+
+            WebDriverWait(browser, 20).until(EC.element_to_be_clickable(submit_button)).click()
+
+            submit_button.click()
 
             browser.quit()
             print(f'Done with sub {i + 1}')
