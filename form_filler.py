@@ -154,7 +154,7 @@ default: %(default)s
                 # Get a good view of the form doing its thing
                 browser.maximize_window()
             browser.get(form_url)
-            time.sleep(5)
+            time.sleep(15)
 
             input_13_20 = browser.find_element(By.ID, 'input_13_20')
             input_13_20.send_keys(input_13_20_value)
