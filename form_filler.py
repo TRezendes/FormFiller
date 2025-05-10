@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+from datetime import datetime
 import random
 import time
 from typing import TextIO
@@ -28,17 +29,17 @@ if __name__ == '__main__':
     parser.add_argument(
         '-c', '--content',
         type=str,
-        default='s',
-        choices=['b','s','u'],
+        default='f',
+        choices=['b','f','s','u'],
         help="""
 Select which content with which to fill the form.
-b, s, & u use faker to fill plausible data in the short text fields (name, email address, phone number, etc.).
-For the 500 character textarea field ('Incident Details') and the optional uploaded files
+f, the default, uses the faker package to fill plausible data in all of the text fields. The other three options use snippets from pre-existing texts to fill the text fields up to their max length (255 characters, in most cases).
+
 b uses the Bee Movie transcript,
 s uses text from a random Shakespeare play, and
 u uses the text of the Universal Declaration of Human Rights.
 s & b both fall back to u if their respective API call fails.
-g [NOT IMPLEMENTED YET] fills all text fields and the files with randomly generated gibberish.
+
 type: %(type)s
 default: %(default)s
         """
@@ -49,12 +50,12 @@ default: %(default)s
         action='store_true',
         help="Set this flag to run selenium browser automation in a browser window. Default is to run headless."
     )
-    parser.add_argument(
-        '-f',
-        '--include-files',
-        action='store_true',
-        help="[NOT IMPLEMENTED YET] Set this flag to generate and upload 3 5MB files (the form's maximum) with the form submission."
-    )
+    # parser.add_argument(
+    #     '-f',
+    #     '--include-files',
+    #     action='store_true',
+    #     help="[NOT IMPLEMENTED YET] Set this flag to generate and upload 3 5MB files (the form's maximum) with the form submission."
+    # )
 
     args = parser.parse_args()
 
@@ -63,7 +64,7 @@ default: %(default)s
     include_files: bool = args.include_files
     windowed: bool = args.windowed
 
-    form_url: str = 'https://enddei.ed.gov/'
+    form_url: str = 'https://www.hhs.gov/protect-kids/index.html'
 
     fake = Faker()
     fake.add_provider(date_time)
@@ -75,8 +76,6 @@ default: %(default)s
     def filler(
         form_url: str=form_url,
         num_subs: int=num_subs,
-        content_choice: str=content_choice,
-        include_files: bool=include_files,
         windowed: bool=windowed
     ) -> None:
         i: int
@@ -141,6 +140,38 @@ default: %(default)s
             time.sleep(sleep_time)
             print('Annnnd...GO!')
 
+            reported_before: bool = random.choice([True, False])
+            previously_reported_id: str
+            if reported_before:
+                previously_reported_id = 'edit-previously-reported-yes'
+            else:
+                previously_reported_id = 'edit-previously-reported-no'
+
+
+            previously_reported = browser.find_element(By.ID, previously_reported_id)
+            previously_reported.click()
+
+            if reported_before:
+                reported_to_prefix: str = ''
+                choose_prefix: bool = random.choice([True, False])
+                if choose_prefix:
+                    reported_to_prefix = f'{fake.prefix()} '
+                reported_to_suffix: str = ''
+                choose_suffix: bool = random.choice([True, False])
+                if choose_suffix:
+                    reported_to_suffix = f' {fake.suffix()}'
+                reported_to_name: str = fake.name()
+                reported_to_value: str = reported_to_prefix + reported_to_name + reported_to_suffix
+                previously_reported_to = browser.find_element(By.ID, 'edit-previously-reported-to-whom')
+                previously_reported_to.send_keys(reported_to_value)
+                earliest_date: datetime = datetime(2020, 11, 3)
+                previously_reported_on_value: str = fake.date_between(earliest_date).strftime('%Y-%m-%d')
+                previously_reported_on = browser.find_element(By.ID, 'edit-first-report-activity')
+                previously_reported_on.send_keys(previously_reported_on_value)
+
+
+
+#####
             email_input = browser.find_element(By.ID, 'email')
             email_input.send_keys(email_value)
             location_input = browser.find_element(By.ID, 'location')
@@ -150,6 +181,7 @@ default: %(default)s
             description_input = browser.find_element(By.ID, 'description')
             description_input.send_keys(description_value)
             submit_button = browser.find_element(By.ID, 'submitButton')
+#####
 
             WebDriverWait(browser, 20).until(EC.element_to_be_clickable(submit_button)).click()
 
